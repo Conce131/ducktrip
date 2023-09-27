@@ -4,5 +4,131 @@
 }
 
 body {
+  margin: 0;
   background: white;
+}
+
+.section1-container {
+  background: url("/assets/Stella_Maris_Exterior.webp");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 40vw;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+  align-content: center;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+/* Nav style */
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: rgb(62 134 245 / 50%);
+}
+
+nav h1 {
+  color: var(--blueduck);
+}
+
+.nav-buttons {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-buttons a {
+  color: var(--blueduck);
+  cursor: pointer;
+}
+
+/* search input styles */
+
+.search-input-container {
+  margin-inline: auto;
+  width: 45rem;
+  height: 15rem;
+  background-color: transparent;
+  filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
+  padding-top: 10rem;
+
+  /* border-radius: 1.25rem; */
+}
+
+.buttons-container {
+  margin-top: 6rem;
+  width: 50%;
+  height: 20%;
+  background-color: white;
+  border-radius: 1.25rem 1.25rem 0 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.buttons-container button {
+  border-radius: 1.875rem;
+  background: white;
+  border: 0 solid var(--blueduck);
+  padding: 0.65rem;
+}
+
+.buttons-container button:hover {
+  background: rgb(62 134 245 / 50%);
+}
+
+.buttons-container button img {
+  max-height: 1rem;
+}
+
+.search-input {
+  width: 100%;
+  height: 85%;
+  border-radius: 0 1.25rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.search-input * {
+  border-radius: 1.25rem;
+}
+
+.search-input input {
+  width: 30rem;
+  background-color: rgb(62 134 245 / 50%);
+  border: 5px solid var(--blueduck);
+}
+
+.search-button {
+  padding: 2rem;
+  background-image: url("../src/assets/icons8-lupa-240.png");
+  background-repeat: no-repeat;
+  background-position: center; /* Posición del icono */
+  background-size: 3rem;
+  background-color: rgb(62 134 245 / 50%);
+  border: 5px solid var(--blueduck);
+  margin-left: 2rem;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background-color: rgb(62 134 245 / 70%);
+}
+
+.search-button:active {
+  cursor: pointer;
+  background-color: rgb(62 134 245 / 50%);
 }
