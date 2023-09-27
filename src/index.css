@@ -1,8 +1,145 @@
 :root {
+  --border-radious-small-photos: 35px;
   --blueduck: #3e86f5;
   --salmonduck: #fd787b;
 }
 
 body {
   background: white;
+  margin: 0;
+}
+
+section {
+  width: 100vw;
+  height: 100vh;
+}
+
+.title-block {
+  width: 100vw;
+  height: 10%;
+}
+
+.title {
+  text-align: center;
+  margin: 0;
+  font-size: 2em;
+  padding-top: 2%;
+  color: var(--blueduck);
+  text-decoration: underline;
+}
+
+.content {
+  display: flex;
+  height: 80%;
+  margin-top: 2%;
+  gap: 90px;
+  width: 100vw;
+  justify-content: center;
+}
+
+.information {
+  width: 50vw;
+  border-radius: 56px;
+}
+
+.information h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 30%;
+  margin: auto;
+  padding: 5%;
+}
+
+.information p {
+  margin: auto;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 30%;
+  color: #00000080;
+}
+
+.photo {
+  width: 20vw;
+  background-color: #fff;
+  border-radius: 75px;
+  display: flex;
+  background-image: url("./assets/photo_1.jpg");
+  background-position: center;
+  background-size: cover;
+  box-shadow: 0 4px 4px 3px rgb(0 0 0 / 25%);
+}
+
+.right-side {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.left-side {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* .right-side {
+  background-color: aqua;
+  display: flex;
+  flex-direction: end;
+} */
+
+.photo1 {
+  background-color: #fff;
+  height: 15%;
+  width: 120%;
+  border-radius: var(--border-radious-small-photos);
+  margin-top: 5rem;
+  margin-bottom: 20rem;
+  margin-left: -73px;
+  text-align: center;
+  box-shadow: 0 0 25px 0 #0000001a;
+}
+
+.photo2 {
+  background-color: #fff;
+  height: 15%;
+  width: 120%;
+  border-radius: var(--border-radious-small-photos);
+  margin-top: 5rem;
+  margin-left: -73px;
+  text-align: center;
+  box-shadow: 0 0 25px 0 #0000001a;
+}
+
+.photo3 {
+  background-color: #fff;
+  height: 15%;
+  width: 120%;
+  border-radius: var(--border-radious-small-photos);
+  display: flex;
+  flex-direction: column;
+  margin-top: 20rem;
+  text-align: center;
+  box-shadow: 0 0 25px 0 #0000001a;
+  margin-left: 100px;
+}
+
+.photo-info h3 {
+  height: 10%;
+  color: var(--blueduck);
+}
+
+.photo-info p {
+  width: 90%;
+  height: 80%;
+  margin: auto;
 }
