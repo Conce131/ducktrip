@@ -2,40 +2,196 @@
   --border-radious-small-photos: 35px;
   --blueduck: #3e86f5;
   --salmonduck: #fd787b;
+  --tittle-size: 3.4vw;
+}
+
+@font-face {
+  font-family: Poppins;
+  src: url("/src/fonts/Poppins-Regular.ttf") format("ttf");
+  font-weight: 400; /* Otras variantes de peso si es necesario */
 }
 
 body {
-  margin: 0;
   background: white;
   margin: 0;
+  font-family: Poppins, sans-serif;
 }
 
 section {
-  width: 100vw;
+  width: 100%;
   height: 100vh;
 }
 
+/* Nav style */
+
+nav {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  background-color: white;
+  filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
+}
+
+nav h1 {
+  color: var(--blueduck);
+  text-shadow: 0 8px 8px rgb(0 0 0 / 25%);
+  font-style: normal;
+}
+
+.nav-line {
+  margin-block: auto;
+  height: 3rem;
+  border: solid 1px var(--blueduck);
+}
+
+.nav-buttons {
+  display: flex;
+  width: 60%;
+  justify-content: space-evenly;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-buttons a {
+  color: var(--blueduck);
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+/* Middle wellcome text */
+.wellcome-text {
+  margin-inline: auto;
+  margin-bottom: 0;
+  color: white;
+  font-size: 3vw;
+  text-shadow: 8px 8px 8px rgb(0 0 0 / 75%);
+}
+
+/* search input styles */
+
+.search-input-container {
+  margin-inline: auto;
+  width: 45rem;
+  height: 15rem;
+  background-color: transparent;
+  filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
+  padding-top: 10rem;
+}
+
+.box-text {
+  font-size: 1.5vw;
+  color: white;
+}
+
+.buttons-container {
+  margin-top: 6rem;
+  width: 50%;
+  height: 20%;
+  background-color: white;
+  border-radius: 1.25rem 1.25rem 0 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-content: center;
+}
+
+.buttons-container button {
+  max-height: 2.3rem;
+  width: 5vw;
+  border-radius: 1.875rem;
+  background: white;
+  border: 0 solid var(--blueduck);
+  padding: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.buttons-container button:hover {
+  background: rgb(62 134 245 / 50%);
+}
+
+.buttons-container button img {
+  max-height: 1rem;
+}
+
+.search-input {
+  width: 100%;
+  height: 85%;
+  border-radius: 0 1.25rem 1.25rem;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+  background-color: white;
+}
+
+.search-input * {
+  border-radius: 1.25rem;
+}
+
+.search-input input {
+  width: 30rem;
+  background-color: rgb(62 134 245 / 50%);
+  border: 5px solid var(--blueduck);
+}
+
+.search-button {
+  padding: 2rem;
+  background-image: url("../src/assets/icons8-lupa-240.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 3rem;
+  background-color: rgb(62 134 245 / 50%);
+  border: 5px solid var(--blueduck);
+  margin-left: 2rem;
+}
+
+.search-button:hover {
+  cursor: pointer;
+  background-color: rgb(62 134 245 / 70%);
+}
+
+.search-button:active {
+  cursor: pointer;
+  background-color: rgb(62 134 245 / 50%);
+}
+
+/* end of section1 */
+
+.blue-line {
+  width: 100%;
+  height: 17vh;
+  background-color: var(--blueduck);
+  filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
+}
+
+/* Section2 styles */
+
 .title-block {
-  width: 100vw;
+  width: 100%;
   height: 10%;
 }
 
 .title {
   text-align: center;
   margin: 0;
-  font-size: 2em;
+  font-size: var(--tittle-size);
   padding-top: 2%;
   color: var(--blueduck);
-  text-decoration: underline;
+}
+
+.section2-tittle-line {
+  width: 27vw;
+  border-color: var(--blueduck);
 }
 
 .content {
   display: flex;
   height: 80%;
   margin-top: 2%;
-  gap: 90px;
-  width: 100vw;
-  justify-content: center;
+  width: 100%;
 }
 
 .information {
@@ -49,7 +205,7 @@ section {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 30%;
+  width: 24vw;
   margin: auto;
   padding: 5%;
 }
@@ -65,6 +221,7 @@ section {
 }
 
 .photo {
+  margin: auto;
   width: 20vw;
   background-color: #fff;
   border-radius: 75px;
@@ -92,13 +249,8 @@ section {
   box-sizing: border-box;
 }
 
-/* .right-side {
-  background-color: aqua;
-  display: flex;
-  flex-direction: end;
-} */
-
 .photo1 {
+  padding-block: 1rem;
   background-color: #fff;
   height: 15%;
   width: 120%;
@@ -111,6 +263,7 @@ section {
 }
 
 .photo2 {
+  padding-block: 1rem;
   background-color: #fff;
   height: 15%;
   width: 120%;
@@ -122,6 +275,7 @@ section {
 }
 
 .photo3 {
+  padding-block: 1rem;
   background-color: #fff;
   height: 15%;
   width: 120%;
@@ -159,113 +313,4 @@ section {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-}
-
-/* Nav style */
-
-nav {
-  width: 100%;
-  display: flex;
-  justify-content: space-around;
-  flex-direction: row;
-  background-color: rgb(62 134 245 / 50%);
-}
-
-nav h1 {
-  color: var(--blueduck);
-}
-
-.nav-buttons {
-  display: flex;
-  width: 60%;
-  justify-content: space-evenly;
-  align-content: center;
-  flex-wrap: wrap;
-}
-
-.nav-buttons a {
-  color: var(--blueduck);
-  cursor: pointer;
-}
-
-/* search input styles */
-
-.search-input-container {
-  margin-inline: auto;
-  width: 45rem;
-  height: 15rem;
-  background-color: transparent;
-  filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
-  padding-top: 10rem;
-
-  /* border-radius: 1.25rem; */
-}
-
-.buttons-container {
-  margin-top: 6rem;
-  width: 50%;
-  height: 20%;
-  background-color: white;
-  border-radius: 1.25rem 1.25rem 0 0;
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  align-content: center;
-}
-
-.buttons-container button {
-  border-radius: 1.875rem;
-  background: white;
-  border: 0 solid var(--blueduck);
-  padding: 0.65rem;
-}
-
-.buttons-container button:hover {
-  background: rgb(62 134 245 / 50%);
-}
-
-.buttons-container button img {
-  max-height: 1rem;
-}
-
-.search-input {
-  width: 100%;
-  height: 85%;
-  border-radius: 0 1.25rem 1.25rem;
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-wrap: wrap;
-  background-color: white;
-}
-
-.search-input * {
-  border-radius: 1.25rem;
-}
-
-.search-input input {
-  width: 30rem;
-  background-color: rgb(62 134 245 / 50%);
-  border: 5px solid var(--blueduck);
-}
-
-.search-button {
-  padding: 2rem;
-  background-image: url("../src/assets/icons8-lupa-240.png");
-  background-repeat: no-repeat;
-  background-position: center; /* Posición del icono */
-  background-size: 3rem;
-  background-color: rgb(62 134 245 / 50%);
-  border: 5px solid var(--blueduck);
-  margin-left: 2rem;
-}
-
-.search-button:hover {
-  cursor: pointer;
-  background-color: rgb(62 134 245 / 70%);
-}
-
-.search-button:active {
-  cursor: pointer;
-  background-color: rgb(62 134 245 / 50%);
 }
