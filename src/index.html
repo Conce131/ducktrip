@@ -1,162 +1,226 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <link rel="stylesheet" href="./index.css" />
-  <script type="module" src="./index.js"></script>
-</head>
-
-<body>
-  <section>
-    <div class="section1-container">
-      <nav>
-        <h1>Duck Trip</h1>
-        <div class="nav-buttons">
-          <a>About</a>
-          <a>Tiempo</a>
-          <a>Hoteles</a>
-          <a>Vuelos</a>
-        </div>
-      </nav>
-      <div class="search-input-container">
-        <div class="buttons-container">
-          <button>
-            <p>Vuelos</p>
-            <img src="assets/icons/plane_icon.png" alt="" />
-          </button>
-          <button>
-            <p>Hoteles</p>
-            <img src="" alt="" />
-          </button>
-          <button>
-            <p>Tiempo</p>
-            <img src="" alt="" />
-          </button>
-        </div>
-        <div class="search-input">
-          <input type="text" />
-          <button class="search-button"></button>
+  <body>
+    <section>
+      <div class="section1-container">
+        <nav>
+          <h1>Duck Trip</h1>
+          <div class="nav-line"></div>
+          <div class="nav-buttons">
+            <a>About</a>
+            <a>Tiempo</a>
+            <a>Hoteles</a>
+            <a>Vuelos</a>
+          </div>
+        </nav>
+        <p class="wellcome-text">Encuentra tu destino</p>
+        <div class="search-input-container">
+          <div class="buttons-container">
+            <button>
+              <p>Vuelos</p>
+              <img src="assets/5ada86f9ccbea649b27b8af5f65558b9.png" alt="" />
+            </button>
+            <button>
+              <p>Hoteles</p>
+              <img src="" alt="" />
+            </button>
+            <button>
+              <p>Tiempo</p>
+              <img src="" alt="" />
+            </button>
+          </div>
+          <div class="search-input">
+            <input
+              class="box-text"
+              type="text"
+              placeholder="¿A donde quieres viajar?"
+            />
+            <button class="search-button"></button>
+          </div>
         </div>
       </div>
-    </div>
-  </section>
-
-  <section class="section3">
-    <h2 class="section3-title">Vuelos</h2>
-    <h3 class="section3-subtitle">
-      Encuentra y compara los vuelos más económicos para tu viaje
-    </h3>
-    <div class="section3-grid">
-      <!--Location 1-->
-      <div class="section3-card">
-        <img class="card-image" src="./assets/images/unsplash_DlkF4-dbCOU.png" />
-        <div class="card-score">
-          <icon class="score-icon">☆</icon>
-          <span class="score-text">4.8</span>
-        </div>
-        <h4>Mezquita-Catedral de Córdoba</h4>
-        <p class="section3-location">
-          <icon class="location-icon">📍</icon>
-          <span class="location-text">Córdoba</span>
-        </p>
+    </section>
+    <div class="blue-line"></div>
+    <section>
+      <div class="title-block">
+        <h1 class="title">¿Qué ofrecemos?</h1>
+        <hr class="section2-tittle-line" />
       </div>
-      <!--Location 2-->
-      <div class="section3-card">
-        <img class="card-image" src="./assets/images/unsplash_DlkF4-dbCOU.png" />
-        <div class="card-score">
-          <icon class="score-icon">☆</icon>
-          <span class="score-text">4.7</span>
+      <div class="content">
+        <div class="information">
+          <h2>Te ayudamos a elegir tu destino.</h2>
+          <p>
+            En DuckTrip, hacemos que viajar sea sencillo y emocionante. Te
+            ayudamos a encontrar tu destino perfecto, reservar vuelos,
+            alojamiento, y te proporcionamos información meteorológica
+            actualizada para que disfrutes al máximo de tus aventuras.<br /><br />
+            ¡Explora, reserva y viaja sin complicaciones con nosotros!
+          </p>
         </div>
-        <h4>La Giralda</h4>
-        <p class="section3-location">
-          <icon class="location-icon">📍</icon>
-          <span class="location-text">Sevilla</span>
-        </p>
-      </div>
-      <!--Location 3-->
-      <div class="section3-card">
-        <img class="card-image" src="./assets/images/unsplash_DlkF4-dbCOU.png" />
-        <div class="card-score">
-          <icon class="score-icon">☆</icon>
-          <span class="score-text">4.8</span>
+        <div class="photo">
+          <div class="right-side">
+            <div class="photo1 photo-info">
+              <h3>Destinos</h3>
+              <p>Elige cualquier país y descubre tu siguiente viaje.</p>
+            </div>
+            <div class="photo2 photo-info">
+              <h3>Hoteles</h3>
+              <p>La estancia ideal para descansar.</p>
+            </div>
+          </div>
+          <div class="left-side">
+            <div class="photo3 photo-info">
+              <h3>Vuelos</h3>
+              <p>Compara la mejor oferta para tu destino.</p>
+            </div>
+          </div>
         </div>
-        <h4>Pico del Teide</h4>
-        <p class="section3-location">
-          <icon class="location-icon">📍</icon>
-          <span class="location-text">Tenerife</span>
-        </p>
       </div>
-      <!--Location 4-->
-      <div class="section3-card">
-        <img class="card-image" src="./assets/images/unsplash_DlkF4-dbCOU.png" />
-        <div class="card-score">
-          <icon class="score-icon">☆</icon>
-          <span class="score-text">4.7</span>
+    </section>
+    <section class="section3">
+      <h2 class="section3-title">Vuelos</h2>
+      <h3 class="section3-subtitle">
+        Encuentra y compara los vuelos más económicos para tu viaje
+      </h3>
+      <div class="section3-grid">
+        <!--Location 1-->
+        <div class="section3-card">
+          <img
+            class="card-image"
+            src="./assets/images/unsplash_DlkF4-dbCOU.png"
+          />
+          <div class="card-score">
+            <icon class="score-icon">☆</icon>
+            <span class="score-text">4.8</span>
+          </div>
+          <h4>Mezquita-Catedral de Córdoba</h4>
+          <p class="section3-location">
+            <icon class="location-icon">📍</icon>
+            <span class="location-text">Córdoba</span>
+          </p>
         </div>
-        <h4>Basílica de la Sagrada Familia</h4>
-        <p class="section3-location">
-          <icon class="location-icon">📍</icon>
-          <span class="location-text">Barcelona</span>
-        </p>
-      </div>
-      <!--Location 5-->
-      <div class="section3-card">
-        <img class="card-image" src="./assets/images/unsplash_DlkF4-dbCOU.png" />
-        <div class="card-score">
-          <icon class="score-icon">☆</icon>
-          <span class="score-text">4.7</span>
+        <!--Location 2-->
+        <div class="section3-card">
+          <img
+            class="card-image"
+            src="./assets/images/unsplash_DlkF4-dbCOU.png"
+          />
+          <div class="card-score">
+            <icon class="score-icon">☆</icon>
+            <span class="score-text">4.7</span>
+          </div>
+          <h4>La Giralda</h4>
+          <p class="section3-location">
+            <icon class="location-icon">📍</icon>
+            <span class="location-text">Sevilla</span>
+          </p>
         </div>
-        <h4>Playa de las Canteras</h4>
-        <p class="section3-location">
-          <icon class="location-icon">📍</icon>
-          <span class="location-text">Las Palmas de Gran Canaria</span>
-        </p>
-      </div>
-      <!--Location 6-->
-      <div class="section3-card">
-        <img class="card-image" src="./assets/images/unsplash_DlkF4-dbCOU.png" />
-        <div class="card-score">
-          <icon class="score-icon">☆</icon>
-          <span class="score-text">4.6</span>
+        <!--Location 3-->
+        <div class="section3-card">
+          <img
+            class="card-image"
+            src="./assets/images/unsplash_DlkF4-dbCOU.png"
+          />
+          <div class="card-score">
+            <icon class="score-icon">☆</icon>
+            <span class="score-text">4.8</span>
+          </div>
+          <h4>Pico del Teide</h4>
+          <p class="section3-location">
+            <icon class="location-icon">📍</icon>
+            <span class="location-text">Tenerife</span>
+          </p>
         </div>
-        <h4>Puerta de Alcalá</h4>
-        <p class="section3-location">
-          <icon class="location-icon">📍</icon>
-          <span class="location-text">Madrid</span>
-        </p>
-      </div>
-      <!--Location 7-->
-      <div class="section3-card">
-        <img class="card-image" src="./assets/images/unsplash_DlkF4-dbCOU.png" />
-        <div class="card-score">
-          <icon class="score-icon">☆</icon>
-          <span class="score-text">4.7</span>
+        <!--Location 4-->
+        <div class="section3-card">
+          <img
+            class="card-image"
+            src="./assets/images/unsplash_DlkF4-dbCOU.png"
+          />
+          <div class="card-score">
+            <icon class="score-icon">☆</icon>
+            <span class="score-text">4.7</span>
+          </div>
+          <h4>Basílica de la Sagrada Familia</h4>
+          <p class="section3-location">
+            <icon class="location-icon">📍</icon>
+            <span class="location-text">Barcelona</span>
+          </p>
         </div>
-        <h4>Catedral de Santiago de Compostela</h4>
-        <p class="section3-location">
-          <icon class="location-icon">📍</icon>
-          <span class="location-text">Santiago de Compostela</span>
-        </p>
-      </div>
-      <!--Location 8-->
-      <div class="section3-card">
-        <img class="card-image" src="./assets/images/unsplash_DlkF4-dbCOU.png" />
-        <div class="card-score">
-          <icon class="score-icon">☆</icon>
-          <span class="score-text">4.7</span>
+        <!--Location 5-->
+        <div class="section3-card">
+          <img
+            class="card-image"
+            src="./assets/images/unsplash_DlkF4-dbCOU.png"
+          />
+          <div class="card-score">
+            <icon class="score-icon">☆</icon>
+            <span class="score-text">4.7</span>
+          </div>
+          <h4>Playa de las Canteras</h4>
+          <p class="section3-location">
+            <icon class="location-icon">📍</icon>
+            <span class="location-text">Las Palmas de Gran Canaria</span>
+          </p>
         </div>
-        <h4>Ciudad de las Artes y las Ciencias</h4>
-        <p class="section3-location">
-          <icon class="location-icon">📍</icon>
-          <span class="location-text">Valencia</span>
-        </p>
+        <!--Location 6-->
+        <div class="section3-card">
+          <img
+            class="card-image"
+            src="./assets/images/unsplash_DlkF4-dbCOU.png"
+          />
+          <div class="card-score">
+            <icon class="score-icon">☆</icon>
+            <span class="score-text">4.6</span>
+          </div>
+          <h4>Puerta de Alcalá</h4>
+          <p class="section3-location">
+            <icon class="location-icon">📍</icon>
+            <span class="location-text">Madrid</span>
+          </p>
+        </div>
+        <!--Location 7-->
+        <div class="section3-card">
+          <img
+            class="card-image"
+            src="./assets/images/unsplash_DlkF4-dbCOU.png"
+          />
+          <div class="card-score">
+            <icon class="score-icon">☆</icon>
+            <span class="score-text">4.7</span>
+          </div>
+          <h4>Catedral de Santiago de Compostela</h4>
+          <p class="section3-location">
+            <icon class="location-icon">📍</icon>
+            <span class="location-text">Santiago de Compostela</span>
+          </p>
+        </div>
+        <!--Location 8-->
+        <div class="section3-card">
+          <img
+            class="card-image"
+            src="./assets/images/unsplash_DlkF4-dbCOU.png"
+          />
+          <div class="card-score">
+            <icon class="score-icon">☆</icon>
+            <span class="score-text">4.7</span>
+          </div>
+          <h4>Ciudad de las Artes y las Ciencias</h4>
+          <p class="section3-location">
+            <icon class="location-icon">📍</icon>
+            <span class="location-text">Valencia</span>
+          </p>
+        </div>
       </div>
-    </div>
-  </section>
-</body>
-
+    </section>
+  </body>
 </html>

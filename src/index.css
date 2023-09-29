@@ -1,13 +1,109 @@
 :root {
+  --border-radious-small-photos: 35px;
   --blueduck: #3e86f5;
   --salmonduck: #fd787b;
   --tittle-size: 3.4vw;
 }
 
+/* format css styles */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
 body {
+  min-height: 100vh;
+  line-height: 1.5;
   background: white;
   margin: 0;
   font-family: Poppins, sans-serif;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentcolor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* CSS FROMAT ENDS HERE */
+
+@font-face {
+  font-family: Poppins;
+  src: url("/src/fonts/Poppins-Regular.ttf") format("ttf");
+  font-weight: 400; /* Otras variantes de peso si es necesario */
 }
 
 section {
@@ -19,16 +115,26 @@ section {
 
 nav {
   width: 100%;
+  height: 8vh;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
-  background-color: transparent;
+  background-color: white;
+  filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
 }
 
 nav h1 {
   color: var(--blueduck);
   text-shadow: 0 8px 8px rgb(0 0 0 / 25%);
   font-style: normal;
+  margin-block: auto;
+  font-size: 2.4rem;
+}
+
+.nav-line {
+  margin-block: auto;
+  height: 3rem;
+  border: solid 1px var(--blueduck);
 }
 
 .nav-buttons {
@@ -42,6 +148,20 @@ nav h1 {
 .nav-buttons a {
   color: var(--blueduck);
   cursor: pointer;
+  font-size: 2rem;
+}
+
+.nav-buttons a:active {
+  transform: translateY(-5px); /* Mueve hacia arriba 5 píxeles */
+}
+
+/* Middle wellcome text */
+.wellcome-text {
+  margin-inline: auto;
+  margin-bottom: 0;
+  color: white;
+  font-size: 3vw;
+  text-shadow: 8px 8px 8px rgb(0 0 0 / 75%);
 }
 
 /* search input styles */
@@ -55,8 +175,13 @@ nav h1 {
   padding-top: 10rem;
 }
 
+.box-text {
+  font-size: 1.5vw;
+  color: white;
+}
+
 .buttons-container {
-  margin-top: 6rem;
+  margin-top: -3rem;
   width: 50%;
   height: 20%;
   background-color: white;
@@ -65,13 +190,19 @@ nav h1 {
   justify-content: space-around;
   flex-wrap: wrap;
   align-content: center;
+  padding-block: 2rem;
 }
 
 .buttons-container button {
+  max-height: 2.3rem;
+  width: 5vw;
   border-radius: 1.875rem;
   background: white;
   border: 0 solid var(--blueduck);
   padding: 0.65rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .buttons-container button:hover {
@@ -91,6 +222,7 @@ nav h1 {
   align-content: center;
   flex-wrap: wrap;
   background-color: white;
+  padding-block: 5rem;
 }
 
 .search-input * {
@@ -105,7 +237,7 @@ nav h1 {
 
 .search-button {
   padding: 2rem;
-  background-image: url("../src/assets/icons/mag_icon.png");
+  background-image: url("../src/assets/icons8-lupa-240.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 3rem;
@@ -124,6 +256,15 @@ nav h1 {
   background-color: rgb(62 134 245 / 50%);
 }
 
+/* end of section1 */
+
+.blue-line {
+  width: 100%;
+  height: 17vh;
+  background-color: var(--blueduck);
+  filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
+}
+
 /* Section2 styles */
 
 .title-block {
@@ -134,19 +275,21 @@ nav h1 {
 .title {
   text-align: center;
   margin: 0;
-  font-size: 2em;
+  font-size: var(--tittle-size);
   padding-top: 2%;
   color: var(--blueduck);
-  text-decoration: underline;
+}
+
+.section2-tittle-line {
+  width: 27vw;
+  border-color: var(--blueduck);
 }
 
 .content {
   display: flex;
   height: 80%;
   margin-top: 2%;
-  gap: 90px;
   width: 100%;
-  justify-content: center;
 }
 
 .information {
@@ -156,13 +299,13 @@ nav h1 {
 
 .information h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.3rem;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 30%;
+  width: 28vw;
   margin: auto;
-  padding: 5%;
+  padding-block: 5%;
 }
 
 .information p {
@@ -176,11 +319,12 @@ nav h1 {
 }
 
 .photo {
+  margin: auto;
   width: 20vw;
   background-color: #fff;
   border-radius: 75px;
   display: flex;
-  background-image: url("./assets/images/section2_image2.jpg");
+  background-image: url("./assets/photo_1.jpg");
   background-position: center;
   background-size: cover;
   box-shadow: 0 4px 4px 3px rgb(0 0 0 / 25%);
@@ -204,6 +348,7 @@ nav h1 {
 }
 
 .photo1 {
+  padding-block: 1rem;
   background-color: #fff;
   height: 15%;
   width: 120%;
@@ -216,6 +361,7 @@ nav h1 {
 }
 
 .photo2 {
+  padding-block: 1rem;
   background-color: #fff;
   height: 15%;
   width: 120%;
@@ -227,9 +373,10 @@ nav h1 {
 }
 
 .photo3 {
+  padding-block: 1rem;
   background-color: #fff;
   height: 15%;
-  width: 120%;
+  width: 100%;
   border-radius: var(--border-radious-small-photos);
   display: flex;
   flex-direction: column;
@@ -251,7 +398,7 @@ nav h1 {
 }
 
 .section1-container {
-  background: url("/assets/images/section1_image1.webp");
+  background: url("/assets/Stella_Maris_Exterior.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
