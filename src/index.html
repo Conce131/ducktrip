@@ -1,83 +1,224 @@
 <!DOCTYPE html>
 <html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/reset.css" />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <script type="module" src="./index.js"></script>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="./index.css">
-  <script type="module" src="./index.js"></script>
-</head>
-
-<body>
-  <section>
-    <div class="section1-container">
-      <nav>
-        <h1>
-          Duck Trip
-        </h1>
-        <div class="nav-line"></div>
-        <div class="nav-buttons">
-          <a>About</a>
-          <a>Tiempo</a>
-          <a>Hoteles</a>
-          <a>Vuelos</a>
-        </div>
-      </nav>
-      <p class="wellcome-text">Encuentra tu destino</p>
-      <div class="search-input-container">
-        <div class="buttons-container">
-          <button>
-            <p>Vuelos</p> <img src="assets/5ada86f9ccbea649b27b8af5f65558b9.png" alt="">
-          </button>
-          <button>
-            <p>Hoteles</p> <img src="" alt="">
-          </button>
-          <button>
-            <p>Tiempo</p> <img src="" alt="">
-          </button>
-        </div>
-        <div class="search-input">
-          <input class="box-text" type="text" placeholder="¿A donde quieres viajar?">
-          <button class="search-button"></button>
-        </div>
-      </div>
-    </div>
-  </section>
-  <div class="blue-line"></div>
-  <section>
-    <div class="title-block">
-      <h1 class="title">¿Qué ofrecemos?</h1>
-      <hr class="section2-tittle-line">
-    </div>
-    <div class="content">
-      <div class="information">
-        <h2>Te ayudamos a elegir tu destino.</h2>
-        <p>En DuckTrip, hacemos que viajar sea sencillo y emocionante. Te ayudamos a encontrar tu destino perfecto,
-          reservar vuelos, alojamiento, y te proporcionamos información meteorológica actualizada para que disfrutes al
-          máximo de tus aventuras.<br><br> ¡Explora, reserva y viaja sin complicaciones con nosotros!</p>
-      </div>
-      <div class="photo">
-        <div class="right-side">
-          <div class="photo1 photo-info">
-            <h3>Destinos</h3>
-            <p>Elige cualquier país y
-              descubre tu siguiente viaje.</p>
+  <body>
+    <section>
+      <div class="section1-container">
+        <nav>
+          <h1>Duck Trip</h1>
+          <div class="nav-line"></div>
+          <div class="nav-buttons">
+            <a>About</a>
+            <a>Tiempo</a>
+            <a>Hoteles</a>
+            <a>Vuelos</a>
           </div>
-          <div class="photo2 photo-info">
-            <h3>Hoteles</h3>
-            <p>La estancia ideal para descansar. </p>
+        </nav>
+        <p class="wellcome-text">Encuentra tu destino</p>
+        <div class="search-input-container">
+          <div class="buttons-container">
+            <button>
+              <p>Vuelos</p>
+              <img src="./assets/icons/plane_icon.png" alt="" />
+            </button>
+            <button>
+              <p>Hoteles</p>
+              <img src="" alt="" />
+            </button>
+            <button>
+              <p>Tiempo</p>
+              <img src="" alt="" />
+            </button>
           </div>
-        </div>
-        <div class="left-side">
-          <div class="photo3 photo-info">
-            <h3>Vuelos</h3>
-            <p>Compara la mejor oferta para tu destino.</p>
+          <div class="search-input">
+            <input
+              class="box-text"
+              type="text"
+              placeholder="¿A donde quieres viajar?"
+              id="googleButton"
+            />
+            <button class="search-button"><img src="./assets/icons/mag_icon.png" alt=""></button>
           </div>
         </div>
       </div>
     </section>
-</body>
-
+    <div class="blue-line"></div>
+    <section>
+      <div class="title-block">
+        <h1 class="title">¿Qué ofrecemos?</h1>
+        <hr class="section2-tittle-line" />
+      </div>
+      <div class="content">
+        <div class="information">
+          <h2>Te ayudamos a elegir tu destino.</h2>
+          <p>
+            En DuckTrip, hacemos que viajar sea sencillo y emocionante. Te
+            ayudamos a encontrar tu destino perfecto, reservar vuelos,
+            alojamiento, y te proporcionamos información meteorológica
+            actualizada para que disfrutes al máximo de tus aventuras.<br /><br />
+            ¡Explora, reserva y viaja sin complicaciones con nosotros!
+          </p>
+        </div>
+        <div class="photo">
+          <div class="right-side">
+            <div class="photo1 photo-info">
+              <h3>Destinos</h3>
+              <p>Elige cualquier país y descubre tu siguiente viaje.</p>
+            </div>
+            <div class="photo2 photo-info">
+              <h3>Hoteles</h3>
+              <p>La estancia ideal para descansar.</p>
+            </div>
+          </div>
+          <div class="left-side">
+            <div class="photo3 photo-info">
+              <h3>Vuelos</h3>
+              <p>Compara la mejor oferta para tu destino.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="section3">
+      <h2 class="section3-title">Vuelos</h2>
+      <hr class="section2-tittle-line" />
+      <h3 class="section3-subtitle">
+        Encuentra y compara los vuelos más económicos para tu viaje
+      </h3>
+      <div class="section3-grid">
+        <!--Location 1-->
+        <div class="section3-card">
+          <div class="card-score">
+            <i class="score-icon"></i>
+            <span class="score-text">4.8</span>
+          </div>
+          <img class="card-image" src="./assets/images/section3_cordoba.jpg" />
+          <div class="card-info">
+            <h4 class="info-title">Mezquita-Catedral de Córdoba</h4>
+            <div class="info-location">
+              <i class="location-icon"></i>
+              <span class="location-text">Córdoba</span>
+            </div>
+          </div>
+        </div>
+        <!--Location 2-->
+        <div class="section3-card">
+          <div class="card-score">
+            <i class="score-icon"></i>
+            <span class="score-text">4.7</span>
+          </div>
+          <img class="card-image" src="./assets/images/section3_sevilla.jpg" />
+          <div class="card-info">
+            <h4 class="info-title">La Giralda</h4>
+            <div class="info-location">
+              <i class="location-icon"></i>
+              <span class="location-text">Sevilla</span>
+            </div>
+          </div>
+        </div>
+        <!--Location 3-->
+        <div class="section3-card">
+          <div class="card-score">
+            <i class="score-icon"></i>
+            <span class="score-text">4.8</span>
+          </div>
+          <img class="card-image" src="./assets/images/section3_tenerife.jpg" />
+          <div class="card-info">
+            <h4 class="info-title">Pico del Teide</h4>
+            <div class="info-location">
+              <i class="location-icon"></i>
+              <span class="location-text">Tenerife</span>
+            </div>
+          </div>
+        </div>
+        <!--Location 4-->
+        <div class="section3-card">
+          <div class="card-score">
+            <i class="score-icon"></i>
+            <span class="score-text">4.7</span>
+          </div>
+          <img
+            class="card-image"
+            src="./assets/images/section3_barcelona.jpg"
+          />
+          <div class="card-info">
+            <h4 class="info-title">Basílica de la Sagrada Familia</h4>
+            <div class="info-location">
+              <i class="location-icon"></i>
+              <span class="location-text">Barcelona</span>
+            </div>
+          </div>
+        </div>
+        <!--Location 5-->
+        <div class="section3-card">
+          <div class="card-score">
+            <i class="score-icon"></i>
+            <span class="score-text">4.7</span>
+          </div>
+          <img class="card-image" src="./assets/images/section3_palma.jpg" />
+          <div class="card-info">
+            <h4 class="info-title">Playa de las Canteras</h4>
+            <div class="info-location">
+              <i class="location-icon"></i>
+              <span class="location-text">Las Palmas de Gran Canaria</span>
+            </div>
+          </div>
+        </div>
+        <!--Location 6-->
+        <div class="section3-card">
+          <div class="card-score">
+            <i class="score-icon"></i>
+            <span class="score-text">4.6</span>
+          </div>
+          <img class="card-image" src="./assets/images/section3_madrid.jpg" />
+          <div class="card-info">
+            <h4 class="info-title">Puerta de Alcalá</h4>
+            <div class="info-location">
+              <i class="location-icon"></i>
+              <span class="location-text">Madrid</span>
+            </div>
+          </div>
+        </div>
+        <!--Location 7-->
+        <div class="section3-card">
+          <div class="card-score">
+            <i class="score-icon"></i>
+            <span class="score-text">4.7</span>
+          </div>
+          <img class="card-image" src="./assets/images/section3_santiago.jpg" />
+          <div class="card-info">
+            <h4 class="info-title">Catedral de Santiago de Compostela</h4>
+            <div class="info-location">
+              <i class="location-icon"></i>
+              <span class="location-text">Santiago de Compostela</span>
+            </div>
+          </div>
+        </div>
+        <!--Location 8-->
+        <div class="section3-card">
+          <div class="card-score">
+            <i class="score-icon"></i>
+            <span class="score-text">4.7</span>
+          </div>
+          <img class="card-image" src="./assets/images/section3_valencia.jpg" />
+          <div class="card-info">
+            <h4 class="info-title">Ciudad de las Artes y las Ciencias</h4>
+            <div class="info-location">
+              <i class="location-icon"></i>
+              <span class="location-text">Valencia</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>

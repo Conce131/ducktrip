@@ -5,101 +5,6 @@
   --tittle-size: 3.4vw;
 }
 
-/* format css styles */
-
-/* Box sizing rules */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
-/* Prevent font size inflation */
-html {
-  text-size-adjust: none;
-}
-
-/* Remove default margin in favour of better control in authored CSS */
-body,
-h1,
-h2,
-h3,
-h4,
-p,
-figure,
-blockquote,
-dl,
-dd {
-  margin: 0;
-}
-
-/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
-ul[role="list"],
-ol[role="list"] {
-  list-style: none;
-}
-
-/* Set core body defaults */
-body {
-  min-height: 100vh;
-  line-height: 1.5;
-  background: white;
-  margin: 0;
-  font-family: Poppins, sans-serif;
-}
-
-/* Set shorter line heights on headings and interactive elements */
-h1,
-h2,
-h3,
-h4,
-button,
-input,
-label {
-  line-height: 1.1;
-}
-
-/* Balance text wrapping on headings */
-h1,
-h2,
-h3,
-h4 {
-  text-wrap: balance;
-}
-
-/* A elements that don't have a class get default styles */
-a:not([class]) {
-  text-decoration-skip-ink: auto;
-  color: currentcolor;
-}
-
-/* Make images easier to work with */
-img,
-picture {
-  max-width: 100%;
-  display: block;
-}
-
-/* Inherit fonts for inputs and buttons */
-input,
-button,
-textarea,
-select {
-  font: inherit;
-}
-
-/* Make sure textareas without a rows attribute are not tiny */
-textarea:not([rows]) {
-  min-height: 10em;
-}
-
-/* Anything that has been anchored to should have extra scroll margin */
-:target {
-  scroll-margin-block: 5ex;
-}
-
-/* CSS FROMAT ENDS HERE */
-
 @font-face {
   font-family: Poppins;
   src: url("/src/fonts/Poppins-Regular.ttf") format("ttf");
@@ -108,7 +13,7 @@ textarea:not([rows]) {
 
 section {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
 }
 
 /* Nav style */
@@ -236,7 +141,7 @@ nav h1 {
 }
 
 .search-button {
-  padding: 2rem;
+  padding: 0.5rem;
   background-image: url("../src/assets/icons8-lupa-240.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -254,6 +159,10 @@ nav h1 {
 .search-button:active {
   cursor: pointer;
   background-color: rgb(62 134 245 / 50%);
+}
+
+.search-button img {
+  width: 2rem;
 }
 
 /* end of section1 */
@@ -324,7 +233,7 @@ nav h1 {
   background-color: #fff;
   border-radius: 75px;
   display: flex;
-  background-image: url("./assets/photo_1.jpg");
+  background-image: url("../assets/images/section2_image2.jpg");
   background-position: center;
   background-size: cover;
   box-shadow: 0 4px 4px 3px rgb(0 0 0 / 25%);
@@ -398,7 +307,7 @@ nav h1 {
 }
 
 .section1-container {
-  background: url("/assets/Stella_Maris_Exterior.webp");
+  background: url("../assets/images/section1_image1.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -411,4 +320,105 @@ nav h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.section3 {
+  padding: 4rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.section3-title {
+  font-size: var(--tittle-size);
+  color: var(--blueduck);
+  text-align: center;
+}
+
+.section3-subtitle {
+  color: #000;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  padding: 2rem 0;
+}
+
+.section3-grid {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, 250px);
+  max-width: 1200px;
+  width: 100%;
+  justify-content: center;
+}
+
+.section3-card {
+  border-radius: 1.5rem;
+  background: var(--white-primary, #fff);
+  box-shadow: 4px 4px 25px rgb(0 0 0 / 10%);
+  padding: 0.5rem;
+  position: relative;
+}
+
+.card-score {
+  position: absolute;
+  right: 1.5rem;
+  left: auto;
+  top: 1rem;
+  background-color: white;
+  border-radius: 1rem;
+  padding: 0 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-image {
+  border-radius: 1.5rem;
+  width: 100%;
+}
+
+.score-icon {
+  background: url("../assets/icons/score__icon.png");
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  background-size: 1rem;
+}
+
+.score-text {
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: rgb(50 50 50);
+}
+
+.card-info {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.info-location {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-title {
+  font-size: 0.8rem;
+}
+
+.location-icon {
+  background: url("../assets/icons/location__icon.png");
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  background-size: 1rem;
+}
+
+.location-text {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: rgb(50 50 50);
 }
