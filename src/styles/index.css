@@ -141,7 +141,7 @@ nav h1 {
 }
 
 .search-button {
-  padding: 2rem;
+  padding: 0.5rem;
   background-image: url("../src/assets/icons8-lupa-240.png");
   background-repeat: no-repeat;
   background-position: center;
@@ -159,6 +159,10 @@ nav h1 {
 .search-button:active {
   cursor: pointer;
   background-color: rgb(62 134 245 / 50%);
+}
+
+.search-button img {
+  width: 2rem;
 }
 
 /* end of section1 */
