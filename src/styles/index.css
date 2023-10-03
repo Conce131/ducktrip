@@ -229,7 +229,7 @@ nav h1 {
   background-color: #fff;
   border-radius: 75px;
   display: flex;
-  background-image: url("./assets/photo_1.jpg");
+  background-image: url("../assets/images/section2_image2.jpg");
   background-position: center;
   background-size: cover;
   box-shadow: 0 4px 4px 3px rgb(0 0 0 / 25%);
@@ -303,7 +303,7 @@ nav h1 {
 }
 
 .section1-container {
-  background: url("/assets/Stella_Maris_Exterior.webp");
+  background: url("../assets/images/section1_image1.webp");
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -358,9 +358,9 @@ nav h1 {
 
 .card-score {
   position: absolute;
-  right: 2rem;
+  right: 1.5rem;
   left: auto;
-  top: 2rem;
+  top: 1rem;
   background-color: white;
   border-radius: 1rem;
   padding: 0 0.5rem;
@@ -370,6 +370,7 @@ nav h1 {
 }
 
 .card-image {
+  border-radius: 1.5rem;
   width: 100%;
 }
 
