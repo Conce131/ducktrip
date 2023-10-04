@@ -30,6 +30,12 @@ ol[role="list"] {
   list-style: none;
 }
 
+@font-face {
+  font-family: Poppins;
+  src: url("/src/fonts/Poppins-Regular.ttf") format("ttf");
+  font-weight: 400; /* Otras variantes de peso si es necesario */
+}
+
 /* Set core body defaults */
 body {
   min-height: 100vh;
