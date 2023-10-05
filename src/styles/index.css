@@ -5,6 +5,12 @@
   --tittle-size: 3.4vw;
 }
 
+@font-face {
+  font-family: Poppins;
+  src: url('/src/fonts/Poppins-Regular.ttf') format('ttf');
+  font-weight: 400; /* Otras variantes de peso si es necesario */
+}
+
 @media (width <= 435px) {
   .section1-container {
     height: 90vh;
@@ -150,7 +156,7 @@ nav h1 {
 
 .search-button {
   padding: 0.5vw;
-  background-image: url("../src/assets/icons8-lupa-240.png");
+  background-image: url('../src/assets/icons8-lupa-240.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 3rem;
@@ -275,7 +281,7 @@ nav h1 {
   display: flex;
   width: 20%;
   height: 40vw;
-  background-image: url("../assets/images/section2_image2.jpg");
+  background-image: url('../assets/images/section2_image2.jpg');
   background-position: center;
   background-size: cover;
   box-shadow: 0 4px 4px 3px rgb(0 0 0 / 25%);
@@ -338,7 +344,7 @@ nav h1 {
 }
 
 .section1-container {
-  background: url("../assets/images/section1_image1.webp");
+  background: url('../assets/images/section1_image1.webp');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -417,7 +423,7 @@ nav h1 {
 }
 
 .score-icon {
-  background: url("../assets/icons/score__icon.png");
+  background: url('../assets/icons/score__icon.png');
   width: 1rem;
   height: 1rem;
   display: block;
@@ -448,7 +454,7 @@ nav h1 {
 }
 
 .location-icon {
-  background: url("../assets/icons/location__icon.png");
+  background: url('../assets/icons/location__icon.png');
   width: 1rem;
   height: 1rem;
   display: block;
@@ -459,4 +465,60 @@ nav h1 {
   font-size: 0.75rem;
   font-weight: 600;
   color: rgb(50 50 50);
+}
+
+.footer {
+  background-color: var(--blueduck);
+  width: 100%;
+  display: flex;
+  align-items: center;
+  padding: 1.5rem 4rem;
+  justify-content: space-between;
+  column-gap: 3rem;
+  row-gap: 1rem;
+}
+
+@media screen and (max-width: 576px) {
+  .footer {
+    flex-direction: column-reverse;
+  }
+}
+
+.footer-icon {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.icon-twitter {
+  background: url('../assets/icons/twitter-icon.png');
+  width: 2rem;
+  height: 2rem;
+  background-size: 2rem;
+}
+
+.icon-github {
+  background: url('../assets/icons/github-icon.png');
+  width: 2rem;
+  height: 2rem;
+  background-size: 2rem;
+}
+
+.icon-gmail {
+  background: url('../assets/icons/gmail-icon.png');
+  width: 2rem;
+  height: 2rem;
+  background-size: 2rem;
+}
+
+.icon-instagram {
+  background: url('../assets/icons/instagram-icon.png');
+  width: 2rem;
+  height: 2rem;
+  background-size: 2rem;
+}
+
+.footer-text {
+  color: white;
 }
