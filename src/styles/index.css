@@ -431,8 +431,10 @@ nav h1 {
 /* Sección 4 -- El tiempo */
 
 .section4-container {
-  text-align: center;
-  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
 .section4-title {
@@ -450,27 +452,20 @@ nav h1 {
   font-weight: bold;
 }
 
-/* Estilos para .section4-navbar */
-.section4-navbar {
+.section4-madrid {
   background: linear-gradient(to bottom, #cccccc, #f2f2f2);
   border: 1px solid #ccc;
   padding: 10px 20px;
   border-radius: 10px;
-  margin-bottom: 20px;
-  max-width: 1200px; 
+  max-width: 120px; 
   width: 100%;
   margin: 0 auto; 
-  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  margin-top: 20px;
 }
 
 
-/* Estilos para select dentro de .section4-navbar */
-.section4-navbar select {
-  width: 100%;
-  padding: 8px;
-  border: none;
-  border-radius: 5px;
-}
 
 /* Estilos para .section4-buttoms */
 .section4-buttoms {
@@ -503,49 +498,64 @@ nav h1 {
 /* Estilos para .section4-panel */
 
 .section4-panel {
-  background-color: #f2f2f2;
-  border-radius: 10px;
-  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);  padding: 20px;
+  margin: 0 auto;
+  margin-top: 5%;
+  padding: 5px 30px;
+  border-radius: 3px;
+  background-color: #c4baba93;
+  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+  padding: 20px;
   max-width: 1200px; 
-  margin: 0 auto; 
-  display: flex; 
-  flex-direction: row; 
-  justify-content: space-between; 
-  align-items: flex-start; 
 }
 
-
-
-.forecast-tumbstone {
-  display: flex; 
-  flex-direction: column; 
-  align-items: center;
-  margin-right: 0px auto;
-  width: 50%;
-}
-
-
-
-.tombstone-container {
+table {
+  position: relative;
+  top: 10px;
+  width: 100%;
   text-align: center;
-  padding: 0 10px;
 }
 
-.day-date {
-  font-weight: bold;
+tr:nth-child(1) td:nth-child(1),
+tr:nth-child(1) td:nth-child(2),
+tr:nth-child(1) td:nth-child(3),
+tr:nth-child(1) td:nth-child(4),
+tr:nth-child(1) td:nth-child(5) {
+  padding-bottom: 32px;
 }
 
-.day-number {
-  font-style: italic;
-  font-size: 0.9em;
+tr:nth-child(2) td:nth-child(1),
+tr:nth-child(2) td:nth-child(2),
+tr:nth-child(2) td:nth-child(3),
+tr:nth-child(2) td:nth-child(4),
+tr:nth-child(2) td:nth-child(5) {
+  padding-bottom: 7px;
 }
 
-.day-date,
-.day-number {
-  margin: 5px 0;
+tr:nth-child(3) td:nth-child(1),
+tr:nth-child(3) td:nth-child(2),
+tr:nth-child(3) td:nth-child(3),
+tr:nth-child(3) td:nth-child(4),
+tr:nth-child(3) td:nth-child(5) {
+  padding-bottom: 7px;
 }
 
-/* Estilos responsive */
+tr:nth-child(2),
+tr:nth-child(3) {
+  font-size: .9em;
+}
+
+tr:nth-child(3) {
+  color: #999;
+}
+
+.forecast-icon {
+  height: 70px;
+  width: 70px;
+  display:block;
+
+}
+
+
 @media (max-width: 768px) {
   .section4-container h1 {
       font-size: 24px;
@@ -565,7 +575,7 @@ nav h1 {
       font-size: 14px;
   }
 
-  .section4-navbar select {
+  .section4-madrid {
       font-size: 14px;
   }
 
@@ -574,11 +584,4 @@ nav h1 {
       padding: 8px 16px;
   }
 
-  .day-date {
-      font-size: 14px;
-  }
-
-  .day-number {
-      font-size: 0.8em;
-  }
 }
