@@ -428,3 +428,157 @@ nav h1 {
   font-weight: 600;
   color: rgb(50 50 50);
 }
+/* Sección 4 -- El tiempo */
+
+.section4-container {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.section4-title {
+  font-size: var(--tittle-size);
+  color: var(--blueduck);
+  text-align: center;
+}
+
+.section4-tittle-line {
+  width: 27vw;
+  border-color: var(--blueduck);
+}
+
+.section4-container p {
+  font-weight: bold;
+}
+
+/* Estilos para .section4-navbar */
+.section4-navbar {
+  background: linear-gradient(to bottom, #cccccc, #f2f2f2);
+  border: 1px solid #ccc;
+  padding: 10px 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  max-width: 1200px; 
+  width: 100%;
+  margin: 0 auto; 
+  justify-content: center;
+}
+
+
+/* Estilos para select dentro de .section4-navbar */
+.section4-navbar select {
+  width: 100%;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+/* Estilos para .section4-buttoms */
+.section4-buttoms {
+  display: flex;
+  justify-content: space-around;
+  margin: 10px 10px 20px;
+  max-width: 1200px; 
+  width: 100%;
+  margin: 1.5rem auto;
+}
+
+/*.section-buttoms span .days{
+
+}
+*/
+
+.section4-buttoms span {
+  background-color: blue;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.section4-buttoms span:hover {
+  background-color: darkblue;
+}
+
+/* Estilos para .section4-panel */
+
+.section4-panel {
+  background-color: #f2f2f2;
+  border-radius: 10px;
+  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);  padding: 20px;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  display: flex; 
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: flex-start; 
+}
+
+
+
+.forecast-tumbstone {
+  display: flex; 
+  flex-direction: column; 
+  align-items: center;
+  margin-right: 0px auto;
+  width: 50%;
+}
+
+
+
+.tombstone-container {
+  text-align: center;
+  padding: 0 10px;
+}
+
+.day-date {
+  font-weight: bold;
+}
+
+.day-number {
+  font-style: italic;
+  font-size: 0.9em;
+}
+
+.day-date,
+.day-number {
+  margin: 5px 0;
+}
+
+/* Estilos responsive */
+@media (max-width: 768px) {
+  .section4-container h1 {
+      font-size: 24px;
+  }
+
+  .section4-buttoms span {
+      font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .section4-container h1 {
+      font-size: 20px;
+  }
+
+  .section4-container p {
+      font-size: 14px;
+  }
+
+  .section4-navbar select {
+      font-size: 14px;
+  }
+
+  .section4-buttoms span {
+      font-size: 12px;
+      padding: 8px 16px;
+  }
+
+  .day-date {
+      font-size: 14px;
+  }
+
+  .day-number {
+      font-size: 0.8em;
+  }
+}
