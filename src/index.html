@@ -7,7 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <script type="module" src="./index.js"></script>
+    <script type="module" src="./index.js">
+    </script>
   </head>
 
   <body>
@@ -17,10 +18,10 @@
           <h1>Duck Trip</h1>
           <div class="nav-line"></div>
           <div class="nav-buttons">
-            <a>About</a>
-            <a>Tiempo</a>
-            <a>Hoteles</a>
-            <a>Vuelos</a>
+            <a href="#About">About</a>
+            <a href="#Weather">Tiempo</a>
+            <a href="#Hotels">Hoteles</a>
+            <a href="#Flights">Vuelos</a>
           </div>
         </nav>
         <p class="wellcome-text">Encuentra tu destino</p>
@@ -28,7 +29,7 @@
           <div class="buttons-container">
             <button>
               <p>Vuelos</p>
-              <img class="buttons-container-icons" src="./assets/icons/plane_icon.png" alt="" />
+              <img class="buttons-container-icons" src="./assets/icons/plane_icon.png" alt="Flights" />
             </button>
             <button>
               <p>Hoteles</p>
@@ -46,13 +47,13 @@
               placeholder="¿A donde quieres viajar?"
               id="googleButton"
             />
-            <button class="search-button"><img src="./assets/icons/mag_icon.png" alt=""></button>
+            <button class="search-button"><img src="./assets/icons/mag_icon.png" alt="Search"></button>
           </div>
         </div>
       </div>
     </section>
     <div class="blue-line"></div>
-    <section>
+    <section id="About">
       <div class="title-block">
         <h1 class="title">¿Qué ofrecemos?</h1>
         <hr class="section2-tittle-line" />
@@ -87,7 +88,7 @@
         </div>
       </div>
     </section>
-    <section class="section3">
+    <section class="section3" id="Flights">
       <h2 class="section3-title">Vuelos</h2>
       <hr class="section2-tittle-line" />
       <h3 class="section3-subtitle">Encuentra y compara los vuelos más económicos para tu viaje</h3>
