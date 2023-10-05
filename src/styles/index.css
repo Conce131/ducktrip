@@ -390,6 +390,11 @@ nav h1 {
   justify-content: center;
 }
 
+.card-link {
+  text-decoration: none;
+  color: initial;
+}
+
 .section3-card {
   border-radius: 1.5rem;
   background: var(--white-primary, #fff);
