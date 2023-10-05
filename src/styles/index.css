@@ -11,16 +11,26 @@
   font-weight: 400; /* Otras variantes de peso si es necesario */
 }
 
+@media (width <= 435px) {
+  .section1-container {
+    height: 90vh;
+    width: 100%;
+  }
+
+  .search-input-container {
+    padding-top: -15vh;
+  }
+}
+
 section {
   width: 100%;
-  min-height: 100vh;
 }
 
 /* Nav style */
 
 nav {
   width: 100%;
-  height: 8vh;
+  height: 5vw;
   display: flex;
   justify-content: space-around;
   flex-direction: row;
@@ -33,12 +43,12 @@ nav h1 {
   text-shadow: 0 8px 8px rgb(0 0 0 / 25%);
   font-style: normal;
   margin-block: auto;
-  font-size: 2.4rem;
+  font-size: 2.4vw;
 }
 
 .nav-line {
   margin-block: auto;
-  height: 3rem;
+  height: 2.5vw;
   border: solid 1px var(--blueduck);
 }
 
@@ -53,7 +63,7 @@ nav h1 {
 .nav-buttons a {
   color: var(--blueduck);
   cursor: pointer;
-  font-size: 2rem;
+  font-size: 2vw;
 }
 
 .nav-buttons a:active {
@@ -73,11 +83,11 @@ nav h1 {
 
 .search-input-container {
   margin-inline: auto;
-  width: 45rem;
-  height: 15rem;
+  width: 45vw;
+  height: 15vw;
   background-color: transparent;
   filter: drop-shadow(0 4px 4px rgb(0 0 0 / 25%));
-  padding-top: 10rem;
+  padding-top: 4vw;
 }
 
 .box-text {
@@ -86,48 +96,52 @@ nav h1 {
 }
 
 .buttons-container {
-  margin-top: -3rem;
+  margin-top: -3vh;
   width: 50%;
   height: 20%;
   background-color: white;
-  border-radius: 1.25rem 1.25rem 0 0;
+  border-radius: 1.25vw 1.25vw 0 0;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
   align-content: center;
-  padding-block: 2rem;
+  padding-block: 2vw;
 }
 
 .buttons-container button {
-  max-height: 2.3rem;
-  width: 5vw;
-  border-radius: 1.875rem;
+  height: 4vh;
+  width: 7vw;
+  border-radius: 1.875vh;
   background: white;
   border: 0 solid var(--blueduck);
-  padding: 0.65rem;
+  padding: 0.65vw;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.buttons-container button p {
+  font-size: 1.5vw;
 }
 
 .buttons-container button:hover {
   background: rgb(62 134 245 / 50%);
 }
 
-.buttons-container button img {
-  max-height: 1rem;
+.buttons-container-icons {
+  width: 1.5vw;
 }
 
 .search-input {
   width: 100%;
   height: 85%;
-  border-radius: 0 1.25rem 1.25rem;
+  border-radius: 0 1.25vh 1.25vh;
   display: flex;
   justify-content: center;
   align-content: center;
   flex-wrap: wrap;
   background-color: white;
-  padding-block: 5rem;
+  padding-block: 6vw;
 }
 
 .search-input * {
@@ -135,20 +149,20 @@ nav h1 {
 }
 
 .search-input input {
-  width: 30rem;
+  width: 30vw;
   background-color: rgb(62 134 245 / 50%);
   border: 5px solid var(--blueduck);
 }
 
 .search-button {
-  padding: 2rem;
+  padding: 0.5vw;
   background-image: url('../src/assets/icons8-lupa-240.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 3rem;
   background-color: rgb(62 134 245 / 50%);
   border: 5px solid var(--blueduck);
-  margin-left: 2rem;
+  margin-left: 2vw;
 }
 
 .search-button:hover {
@@ -159,6 +173,10 @@ nav h1 {
 .search-button:active {
   cursor: pointer;
   background-color: rgb(62 134 245 / 50%);
+}
+
+.search-button img {
+  width: 2vw;
 }
 
 /* end of section1 */
@@ -195,40 +213,74 @@ nav h1 {
   height: 80%;
   margin-top: 2%;
   width: 100%;
+  justify-content: center;
+  gap: 10vw;
+  flex-wrap: wrap;
 }
 
 .information {
-  width: 50vw;
   border-radius: 56px;
+  width: 492px;
 }
 
 .information h2 {
   text-align: center;
-  font-size: 2.3rem;
+  font-size: 3.5vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 28vw;
-  margin: auto;
   padding-block: 5%;
 }
 
 .information p {
-  margin: auto;
-  font-size: 1.5rem;
+  font-size: 2vw;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  width: 30%;
   color: #00000080;
+}
+/* stylelint-disable-next-line at-rule-empty-line-before */
+/* stylelint-disable-next-line media-feature-range-notation */
+@media (max-width: 1250px) {
+  .photo {
+    width: 50%;
+  }
+
+  .information {
+    width: 50%;
+  }
+}
+/* stylelint-disable-next-line at-rule-empty-line-before */
+/* stylelint-disable-next-line media-feature-range-notation */
+@media (max-width: 400px) {
+  .photo {
+    width: 50%;
+  }
+
+  .information {
+    width: 50%;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+/* stylelint-disable-next-line at-rule-empty-line-before */
+/* stylelint-disable-next-line media-feature-range-notation */
+@media (max-width: 1250px) {
+  .photo {
+    width: 50%;
+  }
 }
 
 .photo {
-  margin: auto;
-  width: 20vw;
   background-color: #fff;
   border-radius: 75px;
   display: flex;
+  width: 20%;
+  height: 40vw;
   background-image: url('../assets/images/section2_image2.jpg');
   background-position: center;
   background-size: cover;
@@ -242,6 +294,7 @@ nav h1 {
   height: 100%;
   padding: 20px;
   box-sizing: border-box;
+  justify-content: space-between;
 }
 
 .left-side {
@@ -250,56 +303,44 @@ nav h1 {
   width: 50%;
   height: 100%;
   box-sizing: border-box;
+  justify-content: center;
 }
 
-.photo1 {
-  padding-block: 1rem;
+.photo-element {
+  padding-block: 1vw;
   background-color: #fff;
-  height: 15%;
-  width: 120%;
+  height: 8vw;
+  width: 12vw;
   border-radius: var(--border-radious-small-photos);
-  margin-top: 5rem;
-  margin-bottom: 20rem;
-  margin-left: -73px;
-  text-align: center;
-  box-shadow: 0 0 25px 0 #0000001a;
-}
-
-.photo2 {
-  padding-block: 1rem;
-  background-color: #fff;
-  height: 15%;
-  width: 120%;
-  border-radius: var(--border-radious-small-photos);
-  margin-top: 5rem;
-  margin-left: -73px;
+  margin-left: -7vw;
   text-align: center;
   box-shadow: 0 0 25px 0 #0000001a;
 }
 
 .photo3 {
-  padding-block: 1rem;
+  padding-block: 1vw;
   background-color: #fff;
-  height: 15%;
+  height: 18%;
   width: 100%;
   border-radius: var(--border-radious-small-photos);
   display: flex;
   flex-direction: column;
-  margin-top: 20rem;
   text-align: center;
   box-shadow: 0 0 25px 0 #0000001a;
-  margin-left: 100px;
+  margin-left: 5vw;
 }
 
 .photo-info h3 {
-  height: 10%;
+  height: 1.5vw;
   color: var(--blueduck);
+  font-size: 1.5vw;
 }
 
 .photo-info p {
   width: 90%;
-  height: 80%;
+  height: 90%;
   margin: auto;
+  font-size: 1vw;
 }
 
 .section1-container {
@@ -316,6 +357,7 @@ nav h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin-bottom: 10vw;
 }
 
 .section3 {
@@ -354,6 +396,12 @@ nav h1 {
   box-shadow: 4px 4px 25px rgb(0 0 0 / 10%);
   padding: 0.5rem;
   position: relative;
+}
+
+.section3-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 4px 4px 25px var(--blueduck);
+  cursor: pointer;
 }
 
 .card-score {
