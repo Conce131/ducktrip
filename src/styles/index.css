@@ -221,9 +221,32 @@ nav h1 {
 }
 
 .information {
-  border-radius: 56px;
-  width: 492px;
+  width: 25vw;
+  height: 40vw;
+  overflow: hidden; /* Ocultar contenido que se desborda */
+  display: flex;
+  flex-direction: column;
+  animation: slideInFromLeft 1.5s 1 paused;
 }
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 
 .information h2 {
   text-align: center;
@@ -231,7 +254,7 @@ nav h1 {
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-block: 5%;
+  padding-bottom: 5%;
 }
 
 .information p {
@@ -287,6 +310,7 @@ nav h1 {
   background-position: center;
   background-size: cover;
   box-shadow: 0 4px 4px 3px rgb(0 0 0 / 25%);
+  animation: slideInFromRight 1.5s paused;
 }
 
 .right-side {

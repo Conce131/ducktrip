@@ -23,3 +23,29 @@ document.querySelector('.search-button').addEventListener('click', searchInGoogl
 // luego si se hace click en esa clase se llamara la funcion searchInGoogle
 
 //
+
+// Observa el elemento que deseas animar
+// Seleccionamos los div que tienen la clase .information y .photo
+const informationElement = document.querySelector('.information');
+const photoElement = document.querySelector('.photo');
+
+// declaramos la funcion observer:
+
+const observer = new IntersectionObserver((entries, observer) => {
+  entries.forEach((entry) => {
+    // "Si .information.esInterceptado, es decir, esta en la vista hace lo siguiente"
+    if (entry.isIntersecting) {
+      // Cuando el elemento es visible en la página, activa la animación
+      informationElement.style.animationPlayState = 'running';
+      photoElement.style.animationPlayState = 'running';
+      // Cambia el estilo 'paused' que ya tiene .information y .photo en el css a 'running'
+      // Detén la observación después de activar la animación
+      observer.unobserve(entry.target);
+    }
+  });
+});
+
+// Comienza a observar el elemento
+// Aqui le pasamos como parametros los dos div que guardamos anteriormente
+observer.observe(informationElement);
+observer.observe(photoElement);
