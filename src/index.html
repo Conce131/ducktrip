@@ -7,7 +7,9 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <script src="./index.js" defer></script>
+    <link rel="stylesheet" href="./styles/vendors/flickity.css" />
+    <script src="./js/index.js" defer></script>
+    <script src="./js/vendors/flickity.pkgd.min.js" defer></script>
   </head>
 
   <body>
@@ -61,10 +63,9 @@
         <div class="information">
           <h2>Te ayudamos a elegir tu destino.</h2>
           <p>
-            En DuckTrip, hacemos que viajar sea sencillo y emocionante. Te
-            ayudamos a encontrar tu destino perfecto, reservar vuelos,
-            alojamiento, y te proporcionamos información meteorológica
-            actualizada para que disfrutes al máximo de tus aventuras.<br /><br />
+            En DuckTrip, hacemos que viajar sea sencillo y emocionante. Te ayudamos a encontrar tu
+            destino perfecto, reservar vuelos, alojamiento, y te proporcionamos información
+            meteorológica actualizada para que disfrutes al máximo de tus aventuras.<br /><br />
             ¡Explora, reserva y viaja sin complicaciones con nosotros!
           </p>
         </div>
@@ -91,9 +92,7 @@
     <section class="section3">
       <h2 class="section3-title">Vuelos</h2>
       <hr class="section2-tittle-line" />
-      <h3 class="section3-subtitle">
-        Encuentra y compara los vuelos más económicos para tu viaje
-      </h3>
+      <h3 class="section3-subtitle">Encuentra y compara los vuelos más económicos para tu viaje</h3>
       <div class="section3-grid">
         <!--Location 1-->
         <div class="section3-card">
@@ -146,10 +145,7 @@
             <i class="score-icon"></i>
             <span class="score-text">4.7</span>
           </div>
-          <img
-            class="card-image"
-            src="./assets/images/section3_barcelona.jpg"
-          />
+          <img class="card-image" src="./assets/images/section3_barcelona.jpg" />
           <div class="card-info">
             <h4 class="info-title">Basílica de la Sagrada Familia</h4>
             <div class="info-location">
@@ -221,32 +217,25 @@
       </div>
     </section>
 
-    <section class = "section5">
+    <!-- Section 5 -->
+    <section class="section5">
       <h2 class="section5-title">Hoteles</h2>
       <hr class="section2-tittle-line" />
       <div class="main-container-image">
-        <h1 class="section5-container-title">
-          Encuentra tu hotel perfecto
-        </h1>
+        <h1 class="section5-container-title">Encuentra tu hotel perfecto</h1>
         <div class="info-main-container">
-        <p class="section5-container-subtitle">
-          Sumérgete en una selección excepcional de hoteles de primera categoría.    
-        </p>
-        <p class="section5-container-subtitle">
-          ¡Comienza tu búqueda ahora y descubre lo que estos hoteles tienen para ofrecer!
-        </p>
+          <p class="section5-container-subtitle">
+            Sumérgete en una selección excepcional de hoteles de primera categoría.
+          </p>
+          <p class="section5-container-subtitle">
+            ¡Comienza tu búqueda ahora y descubre lo que estos hoteles tienen para ofrecer!
+          </p>
         </div>
       </div>
-      <div class="margin-between">
-      </div>
-      <!-- Slideshow container -->
-<div class="slideshow-container">
-
-  <!-- Full-width images with number and caption text -->
-  <div class="mySlides fade">
-    <div class="numbertext">1 / 4</div>
-    <!--Location 1-->
-         <div class="section5-card">
+      <!-- Flickity HTML init -->
+      <div class="gallery js-flickity" data-flickity='{ "wrapAround": true }'>
+        <!--Location 1-->
+        <div class="section5-card">
           <div class="card-score5">
             <i class="score-icon5"></i>
             <span class="score-text5">4.8</span>
@@ -260,12 +249,7 @@
             </div>
           </div>
         </div>
-    <div class="text">Córdoba</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">2 / 4</div>
-    <!--Location 2-->
+        <!--Location 2-->
         <div class="section5-card">
           <div class="card-score5">
             <i class="score-icon5"></i>
@@ -279,14 +263,9 @@
               <span class="location-text5">Sevilla</span>
             </div>
           </div>
-        </div> 
-    <div class="text">Sevilla</div>
-  </div>
-
-  <div class="mySlides fade">
-    <div class="numbertext">3 / 4</div>
-<!--Location 3-->
-         <div class="section5-card">
+        </div>
+        <!--Location 3-->
+        <div class="section5-card">
           <div class="card-score5">
             <i class="score-icon5"></i>
             <span class="score-text5">4.8</span>
@@ -297,98 +276,16 @@
             <div class="info-location5">
               <i class="location-icon5"></i>
               <span class="location-text5">Tenerife</span>
-            </div>
-          </div>
-        </div>    
-        <div class="text">Tenerife</div>
-  </div>
-  <div class="mySlides fade">
-    <div class="numbertext">4 / 4</div>
-    <!--Location 1-->
-         <div class="section5-card">
-          <div class="card-score5">
-            <i class="score-icon5"></i>
-            <span class="score-text5">4.8</span>
-          </div>
-          <img class="card-image5" src="./assets/images/section3_cordoba.jpg" />
-          <div class="card-info5">
-            <h4 class="info-title5">Mezquita-Catedral de Córdoba</h4>
-            <div class="info-location5">
-              <i class="location-icon5"></i>
-              <span class="location-text5">Cádiz</span>
             </div>
           </div>
         </div>
-    <div class="text">Cádiz</div>
-  </div>
-  <!-- Next and previous buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
-<br>
-
-<!-- The dots/circles -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-</div>
-      <!-- <div class="section5-grid"> -->
-        <!--Location 1-->
-        <!-- <div class="section5-card">
-          <div class="card-score5">
-            <i class="score-icon5"></i>
-            <span class="score-text5">4.8</span>
-          </div>
-          <img class="card-image5" src="./assets/images/section3_cordoba.jpg" />
-          <div class="card-info5">
-            <h4 class="info-title5">Mezquita-Catedral de Córdoba</h4>
-            <div class="info-location5">
-              <i class="location-icon5"></i>
-              <span class="location-text5">Córdoba</span>
-            </div>
-          </div>
-        </div> -->
-        <!--Location 2-->
-        <!-- <div class="section5-card">
+        <!--Location 4-->
+        <div class="section5-card">
           <div class="card-score5">
             <i class="score-icon5"></i>
             <span class="score-text5">4.7</span>
           </div>
-          <img class="card-image5" src="./assets/images/section3_sevilla.jpg" />
-          <div class="card-info5">
-            <h4 class="info-title5">La Giralda</h4>
-            <div class="info-location5">
-              <i class="location-icon5"></i>
-              <span class="location-text5">Sevilla</span>
-            </div>
-          </div>
-        </div> -->
-        <!--Location 3-->
-        <!-- <div class="section5-card">
-          <div class="card-score5">
-            <i class="score-icon5"></i>
-            <span class="score-text5">4.8</span>
-          </div>
-          <img class="card-image5" src="./assets/images/section3_tenerife.jpg" />
-          <div class="card-info5">
-            <h4 class="info-title5">Pico del Teide</h4>
-            <div class="info-location5">
-              <i class="location-icon5"></i>
-              <span class="location-text5">Tenerife</span>
-            </div>
-          </div>
-        </div> -->
-       <!--Location 4-->
-        <!-- <div class="section5-card">
-          <div class="card-score5">
-            <i class="score-icon5"></i>
-            <span class="score-text5">4.7</span>
-          </div>
-          <img
-            class="card-image"
-            src="./assets/images/section3_barcelona.jpg"
-          />
+          <img class="card-image" src="./assets/images/section3_barcelona.jpg" />
           <div class="card-info5">
             <h4 class="info-title5">Basílica de la Sagrada Familia</h4>
             <div class="info-location5">
@@ -396,80 +293,14 @@
               <span class="location-text5">Barcelona</span>
             </div>
           </div>
-           -->
-
-
-
-
-
-
-
-
-
-
-
-
-          <!--Location 5-->
-        <!-- <div class="section5-card">
+        </div>
+        <!--Location 5-->
+        <div class="section5-card">
           <div class="card-score5">
             <i class="score-icon5"></i>
             <span class="score-text5">4.7</span>
           </div>
-          <img
-            class="card-image"
-            src="./assets/images/section3_barcelona.jpg"
-          />
-          <div class="card-info5">
-            <h4 class="info-title5">Basílica de la Sagrada Familia</h4>
-            <div class="info-location5">
-              <i class="location-icon5"></i>
-              <span class="location-text5">Barcelona</span>
-            </div>
-          </div> -->
-          <!--Location 6-->
-        <!-- <div class="section5-card">
-          <div class="card-score5">
-            <i class="score-icon5"></i>
-            <span class="score-text5">4.7</span>
-          </div>
-          <img
-            class="card-image"
-            src="./assets/images/section3_barcelona.jpg"
-          />
-          <div class="card-info5">
-            <h4 class="info-title5">Basílica de la Sagrada Familia</h4>
-            <div class="info-location5">
-              <i class="location-icon5"></i>
-              <span class="location-text5">Barcelona</span>
-            </div>
-          </div> -->
-          <!--Location 7-->
-        <!-- <div class="section5-card">
-          <div class="card-score5">
-            <i class="score-icon5"></i>
-            <span class="score-text5">4.7</span>
-          </div>
-          <img
-            class="card-image"
-            src="./assets/images/section3_barcelona.jpg"
-          />
-          <div class="card-info5">
-            <h4 class="info-title5">Basílica de la Sagrada Familia</h4>
-            <div class="info-location5">
-              <i class="location-icon5"></i>
-              <span class="location-text5">Barcelona</span>
-            </div>
-          </div> -->
-          <!--Location 8-->
-        <!-- <div class="section5-card">
-          <div class="card-score5">
-            <i class="score-icon5"></i>
-            <span class="score-text5">4.7</span>
-          </div>
-          <img
-            class="card-image"
-            src="./assets/images/section3_barcelona.jpg"
-          />
+          <img class="card-image" src="./assets/images/section3_barcelona.jpg" />
           <div class="card-info5">
             <h4 class="info-title5">Basílica de la Sagrada Familia</h4>
             <div class="info-location5">
@@ -477,9 +308,53 @@
               <span class="location-text5">Barcelona</span>
             </div>
           </div>
-        </div>  -->
+        </div>
+        <!--Location 6-->
+        <div class="section5-card">
+          <div class="card-score5">
+            <i class="score-icon5"></i>
+            <span class="score-text5">4.7</span>
+          </div>
+          <img class="card-image" src="./assets/images/section3_barcelona.jpg" />
+          <div class="card-info5">
+            <h4 class="info-title5">Basílica de la Sagrada Familia</h4>
+            <div class="info-location5">
+              <i class="location-icon5"></i>
+              <span class="location-text5">Barcelona</span>
+            </div>
+          </div>
+        </div>
+        <!--Location 7-->
+        <div class="section5-card">
+          <div class="card-score5">
+            <i class="score-icon5"></i>
+            <span class="score-text5">4.7</span>
+          </div>
+          <img class="card-image" src="./assets/images/section3_barcelona.jpg" />
+          <div class="card-info5">
+            <h4 class="info-title5">Basílica de la Sagrada Familia</h4>
+            <div class="info-location5">
+              <i class="location-icon5"></i>
+              <span class="location-text5">Barcelona</span>
+            </div>
+          </div>
+        </div>
+        <!--Location 8-->
+        <div class="section5-card">
+          <div class="card-score5">
+            <i class="score-icon5"></i>
+            <span class="score-text5">4.7</span>
+          </div>
+          <img class="card-image" src="./assets/images/section3_barcelona.jpg" />
+          <div class="card-info5">
+            <h4 class="info-title5">Basílica de la Sagrada Familia</h4>
+            <div class="info-location5">
+              <i class="location-icon5"></i>
+              <span class="location-text5">Barcelona</span>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
   </body>
-  
 </html>

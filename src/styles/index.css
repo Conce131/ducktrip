@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: Poppins;
-  src: url("/src/fonts/Poppins-Regular.ttf") format("ttf");
+  src: url('/src/fonts/Poppins-Regular.ttf') format('ttf');
   font-weight: 400; /* Otras variantes de peso si es necesario */
 }
 
@@ -142,7 +142,7 @@ nav h1 {
 
 .search-button {
   padding: 2rem;
-  background-image: url("../src/assets/icons8-lupa-240.png");
+  background-image: url('../src/assets/icons8-lupa-240.png');
   background-repeat: no-repeat;
   background-position: center;
   background-size: 3rem;
@@ -229,7 +229,7 @@ nav h1 {
   background-color: #fff;
   border-radius: 75px;
   display: flex;
-  background-image: url("../assets/images/section2_image2.jpg");
+  background-image: url('../assets/images/section2_image2.jpg');
   background-position: center;
   background-size: cover;
   box-shadow: 0 4px 4px 3px rgb(0 0 0 / 25%);
@@ -303,7 +303,7 @@ nav h1 {
 }
 
 .section1-container {
-  background: url("../assets/images/section1_image1.webp");
+  background: url('../assets/images/section1_image1.webp');
   background-size: cover;
   background-position: center;
   width: 100%;
@@ -375,7 +375,7 @@ nav h1 {
 }
 
 .score-icon {
-  background: url("../assets/icons/score__icon.png");
+  background: url('../assets/icons/score__icon.png');
   width: 1rem;
   height: 1rem;
   display: block;
@@ -406,7 +406,7 @@ nav h1 {
 }
 
 .location-icon {
-  background: url("../assets/icons/location__icon.png");
+  background: url('../assets/icons/location__icon.png');
   width: 1rem;
   height: 1rem;
   display: block;
@@ -440,15 +440,14 @@ nav h1 {
   background-color: #fff;
   border-radius: 33px;
   display: flex;
-  background-image: url("../assets/images/section5_hotel.png");
+  background-image: url('../assets/images/section5_hotel.png');
   background-position: center;
   background-size: cover;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
 }
 
 .section5-container-title {
-  font-size: 2rem;
-  color: white;
+  color: rgb(0, 0, 0);
   padding: 4rem 2rem;
   display: flex;
   flex-direction: column;
@@ -459,7 +458,7 @@ nav h1 {
   width: 397px;
   height: 111px;
   flex-shrink: 0;
-  color: #EDEDED;
+  color: #000000;
   font-family: Poppins;
   font-size: 40px;
   font-style: normal;
@@ -468,31 +467,12 @@ nav h1 {
 }
 
 .section5-container-subtitle {
-  color: #ffffff;
-  text-align: left;
-  font-size: 1.5rem;
-  font-weight: 50;
-  padding: 2rem 0;
-}
-
-.margin-between {
-  text-align: center;
-  font-size: 2rem;
+  color: #000000;
+  font-family: Poppins;
+  font-size: 13px;
+  font-style: normal;
   font-weight: 700;
-  padding: 2rem 0;
-}
-
-.section5-grid {
-  display: grid;
-  grid-gap: 1rem;
-  grid-template-columns: repeat(auto-fit, 250px);
-  max-width: 1200px;
-  width: 100%;
-  overflow: hidden;
-  position: relative;
-  margin: 0 auto;
-  max-width: 600px;
-  justify-content: center;
+  line-height: normal;
 }
 
 .section5-card {
@@ -501,6 +481,7 @@ nav h1 {
   box-shadow: 4px 4px 25px rgb(0 0 0 / 10%);
   padding: 0.5rem;
   position: relative;
+  margin: 0 0.5rem;
 }
 
 .card-score5 {
@@ -517,7 +498,7 @@ nav h1 {
 }
 
 .score-icon5 {
-  background: url("../assets/icons/score__icon.png");
+  background: url('../assets/icons/score__icon.png');
   width: 1rem;
   height: 1rem;
   display: block;
@@ -553,7 +534,7 @@ nav h1 {
 }
 
 .location-icon5 {
-  background: url("../assets/icons/location__icon.png");
+  background: url('../assets/icons/location__icon.png');
   width: 1rem;
   height: 1rem;
   display: block;
@@ -566,26 +547,7 @@ nav h1 {
   color: rgb(50 50 50);
 }
 
-/* Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  margin-top: -22px;
-  padding: 16px;
-  color: rgb(0, 140, 255);
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: rgba(122, 180, 246, 0.8);
+.gallery {
+  width: 100%;
+  padding: 2rem 0;
 }
