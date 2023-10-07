@@ -444,9 +444,11 @@ nav h1 {
   background-position: center;
   background-size: cover;
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  flex-direction: column;
 }
 
 .section5-container-title {
+  font-size: 4vw;
   color: rgb(0, 0, 0);
   padding: 4rem 2rem;
   display: flex;
@@ -455,8 +457,7 @@ nav h1 {
 }
 
 .info-main-container {
-  width: 397px;
-  height: 111px;
+  width: 100%;
   flex-shrink: 0;
   color: #000000;
   font-family: Poppins;
@@ -464,6 +465,11 @@ nav h1 {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .section5-container-subtitle {
