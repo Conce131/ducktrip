@@ -453,42 +453,50 @@ nav h1 {
 }
 
 .section4-madrid {
-  background: linear-gradient(to bottom, #cccccc, #f2f2f2);
-  border: 1px solid #ccc;
-  padding: 10px 20px;
-  border-radius: 10px;
-  max-width: 120px; 
-  width: 100%;
-  margin: 0 auto; 
-  text-align: center;
-  cursor: pointer;
-  margin-top: 20px;
+  display: flex;
+  align-items: center;
+  background-color: #f2f2f2;
+  border-radius: 10px; 
+  padding: 20px; 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); 
+  font-size: 18px; 
+  text-align: center; 
+  margin: 0 auto;
+  margin-top: 5%;
+  color: #333; 
+  max-width: 200px;
 }
 
 
 
 /* Estilos para .section4-buttoms */
 .section4-buttoms {
-  display: flex;
-  justify-content: space-around;
-  margin: 10px 10px 20px;
   max-width: 1200px; 
   width: 100%;
   margin: 1.5rem auto;
+  letter-spacing: 1.5px;
+  text-align: center;
 }
 
-/*.section-buttoms span .days{
+.days, .weekend {
+  position: relative;
+  flex-direction: row;
+}
+
+.next_week {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
 
 }
-*/
+
 
 .section4-buttoms span {
-  background-color: blue;
+  background-color: var(--blueduck);
   color: white;
   padding: 10px 20px;
   border-radius: 20px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
 }
 
 .section4-buttoms span:hover {
@@ -498,22 +506,25 @@ nav h1 {
 /* Estilos para .section4-panel */
 
 .section4-panel {
+  display:flex;
   margin: 0 auto;
   margin-top: 5%;
   padding: 5px 30px;
-  border-radius: 3px;
+  border-radius: 20px;
   background-color: #c4baba93;
-  box-shadow: 0 5px 10px rgba(154,160,185,.05), 0 15px 40px rgba(166,173,201,.2);
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
   padding: 20px;
   max-width: 1200px; 
 }
 
 table {
   position: relative;
+  flex-wrap: wrap;
   top: 10px;
   width: 100%;
   text-align: center;
 }
+
 
 tr:nth-child(1) td:nth-child(1),
 tr:nth-child(1) td:nth-child(2),
@@ -521,6 +532,11 @@ tr:nth-child(1) td:nth-child(3),
 tr:nth-child(1) td:nth-child(4),
 tr:nth-child(1) td:nth-child(5) {
   padding-bottom: 32px;
+  font-weight: bold;
+  font-size: 1.5em;
+  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+  0px 8px 13px rgba(0,0,0,0.1),
+  0px 18px 23px rgba(0,0,0,0.1);
 }
 
 tr:nth-child(2) td:nth-child(1),
@@ -529,6 +545,8 @@ tr:nth-child(2) td:nth-child(3),
 tr:nth-child(2) td:nth-child(4),
 tr:nth-child(2) td:nth-child(5) {
   padding-bottom: 7px;
+  font-style: italic;
+  color: #999;
 }
 
 tr:nth-child(3) td:nth-child(1),
@@ -539,49 +557,24 @@ tr:nth-child(3) td:nth-child(5) {
   padding-bottom: 7px;
 }
 
-tr:nth-child(2),
-tr:nth-child(3) {
-  font-size: .9em;
+tr:nth-child(4) td:nth-child(1),
+tr:nth-child(4) td:nth-child(2),
+tr:nth-child(4) td:nth-child(3),
+tr:nth-child(4) td:nth-child(4),
+tr:nth-child(4) td:nth-child(5) {
+  padding-bottom: 7px;
 }
 
-tr:nth-child(3) {
-  color: #999;
+tr:nth-child(3),
+tr:nth-child(4) {
+  font-size: .9em;
+  font-style:oblique;
 }
+
 
 .forecast-icon {
   height: 70px;
   width: 70px;
   display:block;
-
-}
-
-
-@media (max-width: 768px) {
-  .section4-container h1 {
-      font-size: 24px;
-  }
-
-  .section4-buttoms span {
-      font-size: 14px;
-  }
-}
-
-@media (max-width: 480px) {
-  .section4-container h1 {
-      font-size: 20px;
-  }
-
-  .section4-container p {
-      font-size: 14px;
-  }
-
-  .section4-madrid {
-      font-size: 14px;
-  }
-
-  .section4-buttoms span {
-      font-size: 12px;
-      padding: 8px 16px;
-  }
 
 }
