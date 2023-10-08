@@ -472,44 +472,45 @@ nav h1 {
 
 /* Estilos para .section4-buttoms */
 .section4-buttoms {
+  display: flex;
+  justify-content: space-between;
   max-width: 1200px; 
-  width: 100%;
   margin: 1.5rem auto;
   letter-spacing: 1.5px;
-  text-align: center;
+  
 }
 
-.days, .weekend {
-  position: relative;
-  flex-direction: row;
+ .day, .weekend, .next_week {
+  flex-basis: 14%;
 }
-
-.next_week {
-  position: relative;
-  display: flex;
-  flex-wrap: wrap;
-
-}
-
 
 .section4-buttoms span {
   background-color: var(--blueduck);
   color: white;
-  padding: 10px 20px;
+  margin: 1%;
+  padding: 10px 10px;
   border-radius: 20px;
+  text-align: center;
+  transition: background-color 0.3s ease; 
 }
 
 .section4-buttoms span:hover {
   background-color: darkblue;
 }
 
+.section4-buttoms span:first-child {
+  background-color: darkblue;
+}
+
+.day {
+  
+}
 /* Estilos para .section4-panel */
 
 .section4-panel {
   display:flex;
   margin: 0 auto;
-  margin-top: 5%;
-  padding: 5px 30px;
+  margin-top: 1%;
   border-radius: 20px;
   background-color: #c4baba93;
   box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
@@ -573,8 +574,8 @@ tr:nth-child(4) {
 
 
 .forecast-icon {
-  height: 70px;
-  width: 70px;
-  display:block;
+  height: 65px;
+  width: 65px;
+
 
 }
