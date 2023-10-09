@@ -573,6 +573,10 @@ nav h1 {
 
 /* Estilos para .section4-panel */
 
+section{
+  margin-bottom: 8vw;
+}
+
 .section4-panel {
   display: flex;
   margin: 0 auto;
