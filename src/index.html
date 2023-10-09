@@ -7,9 +7,13 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/index.css" />
+    <<<<<<< HEAD
     <link rel="stylesheet" href="./styles/vendors/flickity.css" />
     <script src="./js/index.js" defer></script>
     <script src="./js/vendors/flickity.pkgd.min.js" defer></script>
+    =======
+    <script type="module" src="./index.js"></script>
+    >>>>>>> develop
   </head>
 
   <body>
@@ -19,10 +23,10 @@
           <h1>Duck Trip</h1>
           <div class="nav-line"></div>
           <div class="nav-buttons">
-            <a>About</a>
-            <a>Tiempo</a>
-            <a>Hoteles</a>
-            <a>Vuelos</a>
+            <a href="#About">About</a>
+            <a href="#Weather">Tiempo</a>
+            <a href="#Hotels">Hoteles</a>
+            <a href="#Flights">Vuelos</a>
           </div>
         </nav>
         <p class="wellcome-text">Encuentra tu destino</p>
@@ -30,15 +34,19 @@
           <div class="buttons-container">
             <button>
               <p>Vuelos</p>
-              <img src="assets/5ada86f9ccbea649b27b8af5f65558b9.png" alt="" />
+              <img
+                class="buttons-container-icons"
+                src="./assets/icons/plane_icon.png"
+                alt="Flights"
+              />
             </button>
             <button>
               <p>Hoteles</p>
-              <img src="" alt="" />
+              <img class="buttons-container-icons" src="./assets/icons/hotel_icon.png" alt="" />
             </button>
             <button>
               <p>Tiempo</p>
-              <img src="" alt="" />
+              <img class="buttons-container-icons" src="./assets/icons/weather_icon.png" alt="" />
             </button>
           </div>
           <div class="search-input">
@@ -48,13 +56,15 @@
               placeholder="¿A donde quieres viajar?"
               id="googleButton"
             />
-            <button class="search-button"></button>
+            <button class="search-button">
+              <img src="./assets/icons/mag_icon.png" alt="Search" />
+            </button>
           </div>
         </div>
       </div>
     </section>
     <div class="blue-line"></div>
-    <section>
+    <section id="About">
       <div class="title-block">
         <h1 class="title">¿Qué ofrecemos?</h1>
         <hr class="section2-tittle-line" />
@@ -71,11 +81,11 @@
         </div>
         <div class="photo">
           <div class="right-side">
-            <div class="photo1 photo-info">
+            <div class="photo-element photo-info">
               <h3>Destinos</h3>
               <p>Elige cualquier país y descubre tu siguiente viaje.</p>
             </div>
-            <div class="photo2 photo-info">
+            <div class="photo-element photo-info">
               <h3>Hoteles</h3>
               <p>La estancia ideal para descansar.</p>
             </div>
@@ -89,131 +99,175 @@
         </div>
       </div>
     </section>
-    <section class="section3">
+    <section class="section3" id="Flights">
       <h2 class="section3-title">Vuelos</h2>
       <hr class="section2-tittle-line" />
       <h3 class="section3-subtitle">Encuentra y compara los vuelos más económicos para tu viaje</h3>
       <div class="section3-grid">
         <!--Location 1-->
-        <div class="section3-card">
-          <div class="card-score">
-            <i class="score-icon"></i>
-            <span class="score-text">4.8</span>
-          </div>
-          <img class="card-image" src="./assets/images/section3_cordoba.jpg" />
-          <div class="card-info">
-            <h4 class="info-title">Mezquita-Catedral de Córdoba</h4>
-            <div class="info-location">
-              <i class="location-icon"></i>
-              <span class="location-text">Córdoba</span>
+        <a
+          class="card-link"
+          href="https://www.google.com/search?q=vuelos+a+c%C3%B3rdoba"
+          target="_blank"
+        >
+          <div class="section3-card">
+            <div class="card-score">
+              <i class="score-icon"></i>
+              <span class="score-text">4.8</span>
+            </div>
+            <img class="card-image" src="./assets/images/section3_cordoba.jpg" />
+            <div class="card-info">
+              <h4 class="info-title">Mezquita-Catedral de Córdoba</h4>
+              <div class="info-location">
+                <i class="location-icon"></i>
+                <span class="location-text">Córdoba</span>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <!--Location 2-->
-        <div class="section3-card">
-          <div class="card-score">
-            <i class="score-icon"></i>
-            <span class="score-text">4.7</span>
-          </div>
-          <img class="card-image" src="./assets/images/section3_sevilla.jpg" />
-          <div class="card-info">
-            <h4 class="info-title">La Giralda</h4>
-            <div class="info-location">
-              <i class="location-icon"></i>
-              <span class="location-text">Sevilla</span>
+        <a
+          class="card-link"
+          href="https://www.google.com/search?q=vuelos+a+sevilla"
+          target="_blank"
+        >
+          <div class="section3-card">
+            <div class="card-score">
+              <i class="score-icon"></i>
+              <span class="score-text">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section3_sevilla.jpg" />
+            <div class="card-info">
+              <h4 class="info-title">La Giralda</h4>
+              <div class="info-location">
+                <i class="location-icon"></i>
+                <span class="location-text">Sevilla</span>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <!--Location 3-->
-        <div class="section3-card">
-          <div class="card-score">
-            <i class="score-icon"></i>
-            <span class="score-text">4.8</span>
-          </div>
-          <img class="card-image" src="./assets/images/section3_tenerife.jpg" />
-          <div class="card-info">
-            <h4 class="info-title">Pico del Teide</h4>
-            <div class="info-location">
-              <i class="location-icon"></i>
-              <span class="location-text">Tenerife</span>
+        <a
+          class="card-link"
+          href="https://www.google.com/search?q=vuelos+a+tenerife"
+          target="_blank"
+        >
+          <div class="section3-card">
+            <div class="card-score">
+              <i class="score-icon"></i>
+              <span class="score-text">4.8</span>
+            </div>
+            <img class="card-image" src="./assets/images/section3_tenerife.jpg" />
+            <div class="card-info">
+              <h4 class="info-title">Pico del Teide</h4>
+              <div class="info-location">
+                <i class="location-icon"></i>
+                <span class="location-text">Tenerife</span>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <!--Location 4-->
-        <div class="section3-card">
-          <div class="card-score">
-            <i class="score-icon"></i>
-            <span class="score-text">4.7</span>
-          </div>
-          <img class="card-image" src="./assets/images/section3_barcelona.jpg" />
-          <div class="card-info">
-            <h4 class="info-title">Basílica de la Sagrada Familia</h4>
-            <div class="info-location">
-              <i class="location-icon"></i>
-              <span class="location-text">Barcelona</span>
+        <a
+          class="card-link"
+          href="https://www.google.com/search?q=vuelos+a+barcelona"
+          target="_blank"
+        >
+          <div class="section3-card">
+            <div class="card-score">
+              <i class="score-icon"></i>
+              <span class="score-text">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section3_barcelona.jpg" />
+            <div class="card-info">
+              <h4 class="info-title">Basílica de la Sagrada Familia</h4>
+              <div class="info-location">
+                <i class="location-icon"></i>
+                <span class="location-text">Barcelona</span>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <!--Location 5-->
-        <div class="section3-card">
-          <div class="card-score">
-            <i class="score-icon"></i>
-            <span class="score-text">4.7</span>
-          </div>
-          <img class="card-image" src="./assets/images/section3_palma.jpg" />
-          <div class="card-info">
-            <h4 class="info-title">Playa de las Canteras</h4>
-            <div class="info-location">
-              <i class="location-icon"></i>
-              <span class="location-text">Las Palmas de Gran Canaria</span>
+        <a
+          class="card-link"
+          href="https://www.google.com/search?q=vuelos+a+las+palmas+de+gran+canaria"
+          target="_blank"
+        >
+          <div class="section3-card">
+            <div class="card-score">
+              <i class="score-icon"></i>
+              <span class="score-text">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section3_palma.jpg" />
+            <div class="card-info">
+              <h4 class="info-title">Playa de las Canteras</h4>
+              <div class="info-location">
+                <i class="location-icon"></i>
+                <span class="location-text">Las Palmas de Gran Canaria</span>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <!--Location 6-->
-        <div class="section3-card">
-          <div class="card-score">
-            <i class="score-icon"></i>
-            <span class="score-text">4.6</span>
-          </div>
-          <img class="card-image" src="./assets/images/section3_madrid.jpg" />
-          <div class="card-info">
-            <h4 class="info-title">Puerta de Alcalá</h4>
-            <div class="info-location">
-              <i class="location-icon"></i>
-              <span class="location-text">Madrid</span>
+        <a class="card-link" href="https://www.google.com/search?q=vuelos+a+madrid" target="_blank">
+          <div class="section3-card">
+            <div class="card-score">
+              <i class="score-icon"></i>
+              <span class="score-text">4.6</span>
+            </div>
+            <img class="card-image" src="./assets/images/section3_madrid.jpg" />
+            <div class="card-info">
+              <h4 class="info-title">Puerta de Alcalá</h4>
+              <div class="info-location">
+                <i class="location-icon"></i>
+                <span class="location-text">Madrid</span>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <!--Location 7-->
-        <div class="section3-card">
-          <div class="card-score">
-            <i class="score-icon"></i>
-            <span class="score-text">4.7</span>
-          </div>
-          <img class="card-image" src="./assets/images/section3_santiago.jpg" />
-          <div class="card-info">
-            <h4 class="info-title">Catedral de Santiago de Compostela</h4>
-            <div class="info-location">
-              <i class="location-icon"></i>
-              <span class="location-text">Santiago de Compostela</span>
+        <a
+          class="card-link"
+          href="https://www.google.com/search?q=vuelos+a+santiago+de+compostela"
+          target="_blank"
+        >
+          <div class="section3-card">
+            <div class="card-score">
+              <i class="score-icon"></i>
+              <span class="score-text">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section3_santiago.jpg" />
+            <div class="card-info">
+              <h4 class="info-title">Catedral de Santiago de Compostela</h4>
+              <div class="info-location">
+                <i class="location-icon"></i>
+                <span class="location-text">Santiago de Compostela</span>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
         <!--Location 8-->
-        <div class="section3-card">
-          <div class="card-score">
-            <i class="score-icon"></i>
-            <span class="score-text">4.7</span>
-          </div>
-          <img class="card-image" src="./assets/images/section3_valencia.jpg" />
-          <div class="card-info">
-            <h4 class="info-title">Ciudad de las Artes y las Ciencias</h4>
-            <div class="info-location">
-              <i class="location-icon"></i>
-              <span class="location-text">Valencia</span>
+        <a
+          class="card-link"
+          href="https://www.google.com/search?q=vuelos+a+valencia"
+          target="_blank"
+        >
+          <div class="section3-card">
+            <div class="card-score">
+              <i class="score-icon"></i>
+              <span class="score-text">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section3_valencia.jpg" />
+            <div class="card-info">
+              <h4 class="info-title">Ciudad de las Artes y las Ciencias</h4>
+              <div class="info-location">
+                <i class="location-icon"></i>
+                <span class="location-text">Valencia</span>
+              </div>
             </div>
           </div>
-        </div>
+        </a>
       </div>
     </section>
 
@@ -356,5 +410,18 @@
         </div>
       </div>
     </section>
+    <footer class="footer">
+      <div class="footer-icon">
+        <a class="icon-twitter" href="https://twitter.com/DuckTrip_EOI" target="_blank"></a>
+        <a class="icon-github" href="https://github.com/Conce131/ducktrip" target="_blank"></a>
+        <a class="icon-gmail" href="mailto:ducktripeoi@gmail.com" target="_blank"></a>
+        <a
+          class="icon-instagram"
+          href="https://www.instagram.com/ducktripoficial/"
+          target="_blank"
+        ></a>
+      </div>
+      <div class="footer-text">Desarrollado por Dapper Drake</div>
+    </footer>
   </body>
 </html>
