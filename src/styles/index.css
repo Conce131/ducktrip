@@ -428,6 +428,7 @@ nav h1 {
   font-weight: 600;
   color: rgb(50 50 50);
 }
+
 /* Sección 4 -- El tiempo */
 
 .section4-container {
@@ -456,31 +457,30 @@ nav h1 {
   display: flex;
   align-items: center;
   background-color: #f2f2f2;
-  border-radius: 10px; 
-  padding: 20px; 
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.3); 
-  font-size: 18px; 
-  text-align: center; 
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+  text-shadow: 2px 2px 3px rgb(0 0 0 / 30%);
+  font-size: 18px;
+  text-align: center;
   margin: 0 auto;
   margin-top: 5%;
-  color: #333; 
+  color: #333;
   max-width: 200px;
 }
-
-
 
 /* Estilos para .section4-buttoms */
 .section4-buttoms {
   display: flex;
   justify-content: space-between;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 1.5rem auto;
   letter-spacing: 1.5px;
-  
 }
 
- .day, .weekend, .next_week {
+.day,
+.weekend,
+.next_week {
   flex-basis: 14%;
 }
 
@@ -488,10 +488,10 @@ nav h1 {
   background-color: var(--blueduck);
   color: white;
   margin: 1%;
-  padding: 10px 10px;
+  padding: 10px;
   border-radius: 20px;
   text-align: center;
-  transition: background-color 0.3s ease; 
+  transition: background-color 0.3s ease;
 }
 
 .section4-buttoms span:hover {
@@ -502,20 +502,17 @@ nav h1 {
   background-color: darkblue;
 }
 
-.day {
-  
-}
 /* Estilos para .section4-panel */
 
 .section4-panel {
-  display:flex;
+  display: flex;
   margin: 0 auto;
   margin-top: 1%;
   border-radius: 20px;
   background-color: #c4baba93;
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  box-shadow: 0 14px 28px rgb(0 0 0 / 25%), 0 10px 10px rgb(0 0 0 / 22%);
   padding: 20px;
-  max-width: 1200px; 
+  max-width: 1200px;
 }
 
 table {
@@ -526,7 +523,6 @@ table {
   text-align: center;
 }
 
-
 tr:nth-child(1) td:nth-child(1),
 tr:nth-child(1) td:nth-child(2),
 tr:nth-child(1) td:nth-child(3),
@@ -535,9 +531,10 @@ tr:nth-child(1) td:nth-child(5) {
   padding-bottom: 32px;
   font-weight: bold;
   font-size: 1.5em;
-  text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
-  0px 8px 13px rgba(0,0,0,0.1),
-  0px 18px 23px rgba(0,0,0,0.1);
+  text-shadow:
+    0 4px 3px rgb(0 0 0 / 40%),
+    0 8px 13px rgb(0 0 0 / 10%),
+    0 18px 23px rgb(0 0 0 / 10%);
 }
 
 tr:nth-child(2) td:nth-child(1),
@@ -568,14 +565,12 @@ tr:nth-child(4) td:nth-child(5) {
 
 tr:nth-child(3),
 tr:nth-child(4) {
-  font-size: .9em;
-  font-style:oblique;
+  font-size: 0.9em;
+  font-style: oblique;
 }
-
 
 .forecast-icon {
   height: 65px;
   width: 65px;
-
-
+  margin: auto;
 }
