@@ -449,7 +449,7 @@ nav h1 {
 
 .card-image {
   border-radius: 1.5rem;
-  width: 100%;
+  width: 15vw;
 }
 
 .score-icon {
@@ -504,7 +504,8 @@ nav h1 {
   align-items: center;
 }
 
-.section5-title, .section4-title {
+.section5-title,
+.section4-title {
   font-size: var(--tittle-size);
   color: var(--blueduck);
   text-align: center;
@@ -519,15 +520,17 @@ nav h1 {
 }
 
 .main-container-image {
-  margin: auto;
-  width: 80vw;
-  height: 40vw;
+  margin-inline: auto;
+  margin-top: 4vw;
+  width: 72vw;
+  height: 30vw;
   flex-shrink: 0;
   border-radius: 33px;
   display: flex;
-  background-image: url('../assets/images/section5_main_photo.png');
+  background-image: url('../assets/images/section5_main_photo.jpeg');
   background-position: center;
   background-size: cover;
+  filter: grayscale(30%);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
   flex-direction: column;
 }
@@ -563,13 +566,7 @@ nav h1 {
   text-shadow: 0px 0px 10px black;
 }
 
-.section5-card {
-  border-radius: 1.5rem;
-  background: var(--white-primary, #fff);
-  box-shadow: 4px 4px 25px rgb(0 0 0 / 10%);
-  padding: 0.5rem;
-  position: relative;
-  margin: 0 0.5rem;
+.wiper-wrapper {
 }
 
 .card-score5 {
@@ -635,10 +632,26 @@ nav h1 {
   color: rgb(50 50 50);
 }
 
-.gallery {
+.swiper {
+  margin-top: 3vw;
+  padding: ;
   width: 100%;
-  padding: 2rem 0;
+  overflow: hidden;
+  padding: 4rem;
+  max-width: 960px;
 }
+
+.swiper-wrapper {
+  padding: 5vw;
+}
+
+.swiper-slide {
+  background: var(--white-primary, #fff);
+  box-shadow: 4px 4px 25px rgb(0 0 0 / 10%);
+  border-radius: 1.5rem;
+  width: 80%; /* Ajusta el ancho de las diapositivas */
+}
+
 .section4-tittle-line {
   width: 27vw;
   border-color: var(--blueduck);
@@ -699,7 +712,7 @@ nav h1 {
 
 /* Estilos para .section4-panel */
 
-section{
+.section4 {
   margin-bottom: 8vw;
 }
 
@@ -730,10 +743,7 @@ tr:nth-child(1) td:nth-child(5) {
   padding-bottom: 32px;
   font-weight: bold;
   font-size: 1.5em;
-  text-shadow:
-    0 4px 3px rgb(0 0 0 / 40%),
-    0 8px 13px rgb(0 0 0 / 10%),
-    0 18px 23px rgb(0 0 0 / 10%);
+  text-shadow: 0 4px 3px rgb(0 0 0 / 40%), 0 8px 13px rgb(0 0 0 / 10%), 0 18px 23px rgb(0 0 0 / 10%);
 }
 
 tr:nth-child(2) td:nth-child(1),

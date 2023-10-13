@@ -1,4 +1,30 @@
 /* eslint-disable quotes */
+// import Swiper JS
+import Swiper from 'swiper';
+// import Swiper styles
+import { Navigation, Pagination } from 'swiper/modules';
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
+const mySwiper = new Swiper('.swiper', {
+  modules: [Navigation, Pagination],
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+  pagination: {
+    el: '.swiper-pagination',
+    dynamicBullets: true,
+  },
+  spaceBetween: 20,
+  initialSlide: 0,
+  direction: 'horizontal',
+  loop: true,
+  effect: 'slide',
+  slidesPerView: 4,
+  grabCursor: true,
+});
+
 // Funcionalidad para buscar en google con el buscador del inicio:
 
 // Verificar si se pulsa enter con .ddEventListener("keydown", (event) => {})
