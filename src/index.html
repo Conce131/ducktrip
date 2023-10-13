@@ -7,8 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <script type="module" src="./index.js">
-    </script>
+    <link rel="stylesheet" href="./styles/vendors/flickity.css" />
+    <script src="./js/index.js" defer></script>
+    <script src="./js/vendors/flickity.pkgd.min.js" defer></script>
+    <script type="module" src="./js/index.js"></script>
   </head>
 
   <body>
@@ -29,7 +31,11 @@
           <div class="buttons-container">
             <button>
               <p>Vuelos</p>
-              <img class="buttons-container-icons" src="./assets/icons/plane_icon.png" alt="Flights" />
+              <img
+                class="buttons-container-icons"
+                src="./assets/icons/plane_icon.png"
+                alt="Flights"
+              />
             </button>
             <button>
               <p>Hoteles</p>
@@ -47,7 +53,9 @@
               placeholder="¿A donde quieres viajar?"
               id="googleButton"
             />
-            <button class="search-button"><img src="./assets/icons/mag_icon.png" alt="Search"></button>
+            <button class="search-button">
+              <img src="./assets/icons/mag_icon.png" alt="Search" />
+            </button>
           </div>
         </div>
       </div>
@@ -257,6 +265,219 @@
             </div>
           </div>
         </a>
+      </div>
+    </section>
+    <!-- Section 5 -->
+    <section class="section5" id="Hotels">
+      <h2 class="section5-title">Hoteles</h2>
+      <hr class="section2-tittle-line" />
+      <div class="main-container-image">
+        <h1 class="section5-container-title">Encuentra tu hotel perfecto</h1>
+        <div class="info-main-container">
+          <p class="section5-container-subtitle">
+            Sumérgete en una selección excepcional de hoteles de primera categoría.
+          </p>
+          <p class="section5-container-subtitle">
+            ¡Comienza tu búqueda ahora y descubre lo que estos hoteles tienen para ofrecer!
+          </p>
+        </div>
+      </div>
+      <!-- Flickity HTML init -->
+      <div class="swiper swiper-container">
+        <div class="swiper-wrapper">
+          <!--Location 1-->
+          <div class="swiper-slide">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.8</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_eurostars_madrid.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">EuroStars</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Madrid</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 2-->
+          <div class="swiper-slide">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_hong.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">Rossewood</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Hong-Kong</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 3-->
+          <div class="swiper-slide section5-card">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.8</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_four_seasons_madrid.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">Four Seasons</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Madird</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 4-->
+          <div class="swiper-slide section5-card">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_montreux_suiza.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">Montreux</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Suiza</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 5-->
+          <div class="swiper-slide section5-card">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_negresco_francia.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">Negresco</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Francia</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 6-->
+          <div class="swiper-slide section5-card">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_rambagh_india.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">Rambagh</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">India</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 7-->
+          <div class="swiper-slide section5-card">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_w_barcelona.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">BW Barcelona</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Barcelona</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 8-->
+          <div class="swiper-slide section5-card">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_bahia.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">Bahía del Duque</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Tenerife</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="section4" id="Weather">
+      <div class="section4-container">
+        <h2 class="title">Tiempo</h2>
+        <hr class="section4-tittle-line" />
+        <h2>Consulta el tiempo meteorológico de tu destino</h2>
+      </div>
+
+      <div class="section4-madrid">
+        <i class="location-icon"></i>
+        <p>Madrid, España</p>
+      </div>
+
+      <div class="section4-buttoms">
+        <span class="day">Días</span>
+        <span class="weekend">Fin de semana</span>
+        <span class="next_week">Próxima semana</span>
+      </div>
+
+      <div class="section4-panel">
+        <table>
+          <tr>
+            <td>Lunes</td>
+            <td>Martes</td>
+            <td>Miercoles</td>
+            <td>Jueves</td>
+            <td>Viernes</td>
+          </tr>
+          <tr>
+            <td>29 SEP</td>
+            <td>30 SEP</td>
+            <td>1 OCT</td>
+            <td>2 OCT</td>
+            <td>3 OCT</td>
+          </tr>
+          <tr>
+            <td>30°</td>
+            <td>34°</td>
+            <td>36°</td>
+            <td>34°</td>
+            <td>37°</td>
+          </tr>
+          <tr>
+            <td>17°</td>
+            <td>22°</td>
+            <td>19°</td>
+            <td>23°</td>
+            <td>19°</td>
+          </tr>
+          <tr>
+            <td>
+              <img class="forecast-icon" src="./assets/icons/cloudy_icon.png" />
+            </td>
+            <td>
+              <img class="forecast-icon" src="./assets/icons/rainy_icon.png" />
+            </td>
+            <td>
+              <img class="forecast-icon" src="./assets/icons/sunny_icon.png" />
+            </td>
+            <td>
+              <img class="forecast-icon" src="./assets/icons/sunny_icon.png" />
+            </td>
+            <td>
+              <img class="forecast-icon" src="./assets/icons/sunny_icon.png" />
+            </td>
+          </tr>
+        </table>
       </div>
     </section>
     <footer class="footer">
