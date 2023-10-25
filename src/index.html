@@ -7,7 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="./styles/reset.css" />
     <link rel="stylesheet" href="./styles/index.css" />
-    <script type="module" src="./index.js"></script>
+    <link rel="stylesheet" href="./styles/vendors/flickity.css" />
+    <script src="./js/index.js" defer></script>
+    <script src="./js/vendors/flickity.pkgd.min.js" defer></script>
+    <script type="module" src="./js/index.js"></script>
   </head>
 
   <body>
@@ -18,7 +21,6 @@
           <div class="nav-line"></div>
           <div class="nav-buttons">
             <a href="#About">About</a>
-            <a href="#Weather">Tiempo</a>
             <a href="#Hotels">Hoteles</a>
             <a href="#Flights">Vuelos</a>
           </div>
@@ -37,10 +39,6 @@
             <button>
               <p>Hoteles</p>
               <img class="buttons-container-icons" src="./assets/icons/hotel_icon.png" alt="" />
-            </button>
-            <button>
-              <p>Tiempo</p>
-              <img class="buttons-container-icons" src="./assets/icons/weather_icon.png" alt="" />
             </button>
           </div>
           <div class="search-input">
@@ -264,6 +262,152 @@
         </a>
       </div>
     </section>
+    <!-- Section 5 -->
+    <section class="section5" id="Hotels">
+      <h2 class="section5-title">Hoteles</h2>
+      <hr class="section2-tittle-line" />
+      <div class="main-container-image">
+        <h1 class="section5-container-title">Encuentra tu hotel perfecto</h1>
+        <div class="info-main-container">
+          <p class="section5-container-subtitle">
+            Sumérgete en una selección excepcional de hoteles de primera categoría.
+          </p>
+          <p class="section5-container-subtitle">
+            ¡Comienza tu búqueda ahora y descubre lo que estos hoteles tienen para ofrecer!
+          </p>
+        </div>
+      </div>
+      <!-- Flickity HTML init -->
+      <div class="swiper swiper-container">
+        <div class="swiper-wrapper">
+          <!--Location 1-->
+          <div class="swiper-slide">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.8</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_eurostars_madrid.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">EuroStars</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Madrid</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 2-->
+          <div class="swiper-slide">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_hong.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">Rossewood</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Hong-Kong</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 3-->
+          <div class="swiper-slide section5-card">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.8</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_four_seasons_madrid.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">Four Seasons</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Madrid</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 4-->
+          <div class="swiper-slide section5-card">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_montreux_suiza.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">Montreux</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Suiza</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 5-->
+          <div class="swiper-slide section5-card">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_negresco_francia.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">Negresco</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Francia</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 6-->
+          <div class="swiper-slide section5-card">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_rambagh_india.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">Rambagh</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">India</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 7-->
+          <div class="swiper-slide section5-card">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_w_barcelona.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">BW Barcelona</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Barcelona</span>
+              </div>
+            </div>
+          </div>
+          <!--Location 8-->
+          <div class="swiper-slide section5-card">
+            <div class="card-score5">
+              <i class="score-icon5"></i>
+              <span class="score-text5">4.7</span>
+            </div>
+            <img class="card-image" src="./assets/images/section5_bahia.jpg" />
+            <div class="card-info5">
+              <h4 class="info-title5">Bahía del Duque</h4>
+              <div class="info-location5">
+                <i class="location-icon5"></i>
+                <span class="location-text5">Tenerife</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="footer-icon">
         <a class="icon-twitter" href="https://twitter.com/DuckTrip_EOI" target="_blank"></a>
